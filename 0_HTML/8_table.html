@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Intriduction to Table in HTML</h1>
+    <table border="1">
+        <caption>Student Data</caption>
+        <tr>
+            <th>Name</th>
+            <th>STD-Id</th>
+            <th>Cours</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>Join</td>
+            <td>122</td>
+            <td>MERN Stack</td>
+            <td>join@email.com</td>
+        </tr>
+        <tr>
+            <td>Alic</td>
+            <td>456</td>
+            <td>Python Full Stack</td>
+            <td>alice@email.com</td>
+        </tr>
+        <tr>
+            <td>Emily</td>
+            <td>789</td>
+            <td>Java Full Stack</td>
+            <td>emily@email.com</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Creat a Table</h1>
+    <table border="2">
+        <caption><b>Student Database</b></caption>
+        <tr>
+            <th>Class</th>
+            <th>Marks</th>
+            <th>Subject</th>
+            <th>Board/Collage</th>
+        </tr>
+        <tr>
+            <td>10th</td>
+            <td> 90%
+                <table border="">
+                
+                    <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Hindi</td>
+                        <td>89</td>
+                    </tr>
+                     
+                </table>
+            </td>
+            <td>General</td>
+            <td>CBSE/ICSE/State</td>
+        </tr>
+        <tr>
+            <td>12th</td>
+            <td>80%</td>
+            <td>PCM/PCB/Commarce
+                <ul>
+                    <li>Hindi</li>
+                    <li>Chemistry</li>
+                    <li>English</li>
+                    <li>Physics</li>
+                    <li>Math</li>
+                </ul>
+            </td>
+            <td>CBSE/ICSE/State</td>
+        </tr>
+        <tr>
+            <td>Graduation</td>
+            <td>85%</td>
+            <td>B.tech/BCA</td>
+            <td>Collage Name</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+
+        <caption>data of student with sub mark</caption>
+        <tr>
+            <th rowspan="2">Heading</th>
+            <th>Student</th>
+            <th colspan="3">Details</th>
+        </tr>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Roll Number</th>
+        </tr>
+        <tr>
+        <td rowspan="4">Student List</td>
+        <td>1</td>
+        <td>Victor</td>
+        <td>Computer Science</td>
+        <td>12345</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</td>
+            <td>Electronics</td>
+            <td>23456</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Harry</td>
+            <td>Electrical</td>
+            <td>3456</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Rick</td>
+            <td>Civil</td>
+            <td>4567</td>
+            <td></td>
+        </tr>
+    </table>
+    <hr>
+    <table border="2">
+        <tr>
+            <th>Column 1</th>
+            <th> Column 2</th>
+            <th> Column 3</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Row 1 Cell 1</th>
+            <th>Row 1 Cell 2</th>
+            <th>Row 1 Cell 3</th>
+        </tr>
+        <tr>
+            <th></th>
+        </tr>
+    </table>
+    <hr>
+    <table border="2">
+        <caption>HTML Table Example</caption>
+        <tr>
+            <th colspan="2">Student Name</th>
+            <th colspan="3">Labs</th>
+            <th rowspan="2">Avg</th>
+        </tr>
+        <tr>
+            <th>FIrst</th>
+            <th>Last</th>
+            <th>Lab1</th>
+            <th>Lab2</th>
+            <th>Lab3</th>
+        </tr>
+        <tr>
+            <td>Sol</td>
+            <td>Rosenbeg</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100.0</td>
+        </tr>
+        <tr>
+            <td>Frank</td>
+            <td>Rizzo</td>
+            <td>50</td>
+            <td>60</td>
+            <td>90</td>
+            <td>66.6</td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Kam</td>
+            <td>90</td>
+            <td>80</td>
+            <td>60</td>
+            <td>76.6</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Summary</th>
+            <th>Avg</th>
+            <td>80.0</td>
+            <td>80.0</td>
+            <td>83.3</td>
+            <td>81.1</td>
+        </tr> 
+        <tr>
+            <th>Min</th>
+            <td>50</td>
+            <td>60</td>
+            <td>60</td>
+            <td>66.6</td>
+            
+        </tr>   
+    </table>
+    <hr>
+    <table border="">
+        <caption><b>University Timetable</b></caption>
+        <tr>
+            <th rowspan="2">Day</th>
+            <th colspan="3">Morning</th>
+            <th colspan="2">Afternoon</th>
+            <th rowspan="2">Evening</th>
+        </tr>
+        <tr>
+            <th>9-10</th>
+            <th>10-11</th>
+            <th>11-12</th>
+            <th>1-2</th>
+            <th>2-3</th>
+            
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td rowspan="2">Math</td>
+            <td>English</td>
+            <td rowspan="3"> Physics</td>
+            <td>Lab</td>
+            <td rowspan="2">Project</td>
+            <td rowspan="5">Self-Study</td>
+            
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Biology</td>
+            <td rowspan="2">Seminar</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>--</td>
+            <td>Chemisty</td>
+            <td>Workshop</td>
+            
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td colspan="2">Field Trip</td>
+            <td colspan="2">Guest Lecture</td>
+            <td>Project</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>English</td>
+            <td rowspan="2" colspan="2"> Group Activity</td>
+            <td>Discussion</td>
+            <td>Assignment</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>Test</td>
+            <td colspan="2">Closing Session</td>
+            <td>Break</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="2">
+        <caption><b>Employee Deparment Matrix</b></caption>
+        <tr>
+            <th rowspan="2">Deparment</th>
+            <th rowspan="2">Team</th>
+            <th colspan="3">Employee</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Experience</th>
+        </tr>
+        <tr>
+            <td rowspan="4">Development</td>
+            <td rowspan="2">Frontend</td>
+            <td>Alice</td>
+            <td>UI Developer</td>
+            <td>3 Years</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>React Dev</td>
+            <td>2 Years</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Backend</td>
+            <td>Charlie</td>
+            <td>Node.js Dev</td>
+            <td>4 Years</td>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td>Java Dev</td>
+            <td>5 Years</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Marketing</td>
+            <td>Digital</td>
+            <td>Eva</td>
+            <td>SEO</td>
+            <td>2 Years</td>
+        </tr>
+        <tr>
+            <td>Offile</td>
+            <td>Frank</td>
+            <td>Brand manager</td>
+            <td>6 Years</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="2">
+        <caption><b>Student Academic Report</b></caption>
+        <tr>
+            <th rowspan="2">Student</th>
+            <th colspan="3">Semester 1</th>
+            <th colspan="3">Semester 2</th>
+            <th rowspan="2">Final Avg</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+        <tr>
+            <td>Raj</td>
+            <td>85</td>
+            <td>78</td>
+            <td>88</td>
+            <td>80</td>
+            <td>82</td>
+            <td>90</td>
+            <td>83.8</td>
+        </tr>
+        <tr>
+            <td>Anita</td>
+            <td>92</td>
+            <td rowspan="2" colspan="2">Absent</td>
+            <td>89</td>
+            <td>76</td>
+            <td>85</td>
+            <td>85.0</td>
+        </tr>
+        <tr>
+            <td>Tom</td>
+            <td>79</td>
+            <td>75</td>
+            <td>80</td>
+            <td>--</td>
+         </tr>
+    </table>
+    <mark><hr></mark>
+    <h3>Project Managment Dashbord</h3>
+    <table border="">
+        <caption><b>Team Project Overview</b></caption>
+        <tr>
+            <th rowspan="3">Project ID</th>
+            <th rowspan="3">Project Name</th>
+            <th colspan="6">Team Composition</th>
+            <th colspan="4">TimeLine</th>
+            <th rowspan="3">Status</th>
+            <th rowspan="3">Remarks</th>
+        </tr>
+        <tr>
+            <th colspan="2"> Frontend</th>
+            <th colspan="2">Backend</th>
+            <th colspan="2">QA</th>
+            <th rowspan="2">Start</th>
+            <th rowspan="2">End</th>
+            <th colspan="2">Milestones</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Exp</th>
+            <th>Name</th>
+            <th>Exp</th>
+            <th>Name</th>
+            <th>Exp</th>
+            <th>phase 1</th>
+            <th>Phase 2</th>
+        </tr>
+        <tr>
+            <td>PJ101</td>
+            <th>Health Tracker</th>
+            <td>Alice</td>
+            <td>3y</td>
+            <td>Bob</td>
+            <td>5y</td>
+            <td>Eva</td>
+            <td>2y</td>
+            <td>01-Jan</td>
+            <td>30-Mar</td>
+            <td>10-Jan</td>
+            <td>15-Mar</td>
+            <td><mark>Active</mark></td>
+            <td>
+                <ul>
+                    <li>Delay in Backend API</li>
+                    <li><i>UI completed</i></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">PJ102</td>
+            <td rowspan="2">E-Commerce</td>
+            <td >Rahul</td>
+            <td>4y</td>
+            <td>Meera</td>
+            <td>6y</td>
+            <td rowspan="2" colspan="2">Shared QA: <br><b>Sam(5y)</b></td>
+            <td rowspan="2">10-Feb</td>
+            <td rowspan="2">20-Apr</td>
+            <td>20-Feb</td>
+            <td>25-Mar</td>
+            <td rowspan="2">On Hold</td>
+            <td rowspan="2">
+                <ol>
+                    <li>Pending client feedback</li>
+                    <li>Phase 2 Delayed</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>Sneha</td>
+            <td>2y</td>
+            <td>Ali</td>
+            <td>4y</td>
+            <td>05-Mar</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>PJ103</td>
+            <td>Survet App</td>
+            <td colspan="2">
+                <ul type="cricle">
+                    <li>Kavya(2y)</li>
+                    <li>Ravi(1y)</li>
+                </ul>
+            </td>
+            <td colspan="2">--</td>
+            <td colspan="2">QA:N/A</td>
+            <td>01-Mar</td>
+            <td>10-May</td>
+            <td>
+                <ol type="A">
+                    <li>UX Approval</li>
+                    <li>Data Sync</li>
+                </ol>
+            </td>
+            <td>Planned</td>
+            <td colspan="2">
+                <ul type="square">
+                    <li>No Backend</li>
+                    <li>Only Frontend POC</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!-- 
+Table : table is used to store data in a row and column or tabular from
+
+Table
+border attribute
+to creat rows - tr (table row)
+to create column -
+th - table heading
+td - table data
+
+caption - for table caption
+first we need to create tr - then create columns
+(th/td) accordingly
+
+Student Details
+Name Std-Id Course Conteact
+-->
