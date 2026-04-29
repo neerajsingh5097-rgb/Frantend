@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+
+        <fieldset>
+        <legend>Employee Information</legend>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username" maxlength="20">  <!-- isme hame kitne bhi word type kr skte  sapos hame 20 later rakhane ke ham maxlength use krte he-->
+        <br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <br><br>
+        <label for="email">Email:</label><br>  <!-- jese hame kisi form me kisi cheez ki requrement hoti he uske bina form submit nahi hoga to ham requred tag use krte he-->
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        <label for="age">Age:</label><br>
+         <code></code>
+        <input type="number" id="age" name="age" placeholder="Enter your age">
+        <br><br>
+        <label for="dob">Date of Birth:</label><br>
+        <!-- year month day -->
+        <input type="date" id="dob" name="dob" min="2000-01-01" max="2023-12-31">
+        <br><br>
+        <label for="number">Phone Number:</label><br>
+        <input type="text" size="2" maxlength="2" id="countrycode" name="countrycode" placeholder="+91" readonly>  <!-- size se ham input box ka size badha ya ghatta skte he -->
+        <input type="number" id="number" name="number" placeholder="Enter your phone number">
+        <br><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        <label for="skill">Skill:</label><br>
+        <input type="checkbox" id="skill1" name="skill1" value="css">
+        <label for="skill1">CSS</label>
+        <input type="checkbox" id="skill2" name="skill2" value="java">
+        <label for="skill2">JAVA</label>
+        <input type="checkbox" id="skill3" name="skill3" value="javascript">
+        <label for="skill3">JavaScript</label>
+        <input type="checkbox" id="skill4" name="skill4" value="etc">
+        <label for="skill4">ETC</label>
+        <br><br>
+        <!-- <input type="sumit value="login> -->
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">  
+
+        </fieldset>
+    </form>
+</body>
+</html>
+<!-- 
+form tag ka use form create karne ke liye hota hai
+form ke andar hum input tag ka use karte hai data lene ke liye
+
+lable tag ka use form ke element ko label dene ke liye hota hai
+input tag ka use form ke element ko create karne ke liye hota hai
+
+type attribute se hum input tag ke type ko define karte hai
+1. text -> single line text ke liye (name,username,postion,designation,course,city,company ke liye use hota hai)
+2. password -> password ke liye 
+3. email -> email ke liye(id, email ke liye use hota hai)
+4. number -> number ke liye(age,pincode,phone number ke liye use hota hai)
+5. radio -> radio button ke liye use hota hai(gender ke liye use hota hai (male, female, other),multiple option with single seclection ke liye use hota hai))
+use name attribute for single selection
+name value must be same for all radio button in a group
+6. checkbok -> checkbox ke liye use hota hai(multiple option with multiple selection ke liye use hota hai)
+7. submit -> submit button ke liye use hota hai(form submit karne ke liye use hota hai)like (submit, send, login, register ke liye use hota hai)
+8. reset -> reset button ke liye use hota hai(form reset karne ke liye use hota hai)like (reset, clear ke liye use hota hai)
+9. url -> url ke liye use hota hai(website, linkedin, github ke liye use hota hai)
+10.button -> button ke liye use hota hai(javascript ke sath use hota hai)like (click me, open, close ke liye use hota hai)
+11. date -> date ke liye use hota hai(dob, anniversary ke liye use hota hai)
+12.image -> image ke liye use hota hai(profile picture, cover photo ke liye use hota hai)
+13.range -> range ke liye use hota hai(slider ke liye use hota hai)like (volume control, brightness control ke liye use hota hai)
+14. time -> time ke liye use hota hai(appointment time, meeting time ke liye use hota hai)
+15. datetime-local -> date and time ke liye use hota hai(appointment date and time, meeting date and time ke liye use hota hai) 
+
+-->
