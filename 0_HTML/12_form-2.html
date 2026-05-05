@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+
+        <legend>My persion Data</legend>
+        <label for="">First Name</label> <br>
+        <input type="text"> <br>
+        <br>
+        <label for="">Last Name</label> <br>
+        <input type="text"> <br>
+        <br>
+        <label for="">Mobile Number</label> <br>
+        <input type="text" id="counter code"  size="2" maxlength="2" readonly placeholder="+91">
+        <input type="number"><br>
+        <br>
+        <!-- Readonly se ham kuch bhi update nhi kr skte he run time pr -->
+
+        <!-- Dropdown box : selection, option -->
+         <label for="">Select your prefered location....</label> <br>
+
+         <select name="" id="">
+           <option value="Noida">Noida</option>
+           <option value="Delhi">Delhi</option>
+           <option value="Keberpur">Kuberpur</option>
+         </select>
+         <br><br>
+        <input type="submit" value="Register" > <br><br>
+
+
+        <!-- optgroup -->
+         <label for="">Select any One</label><br>
+         <select name="" id="">
+            <optgroup label="Frontend">   <!-- optgroup me ham option ke bhi option de skte he-->
+                <option value="">HTMLs & CSS</option>
+                <option value="">Javascipt</option>
+                <option value="">Bootstrap</option>
+                <option value="">React</option>
+            </optgroup>
+            <optgroup label="Backend">
+
+                <option value="">Node js</option>
+                <option value="">Java</option>
+                <option value="">Python</option>
+            </optgroup>
+         </select> <br><br>
+
+         <select name="" id="">
+            <option disabled selected>-Select your preffered language</option> <!--disable se yah runtime disable rhega or selected se ise koi select nhi kr skta he-->
+            <option value="">C++</option>
+            <option value="">Java</option>
+            <option value="">Python</option>
+         </select> <br><br>
+        
+         <label for="">Upload  your Resume</label> <br>
+         <input type="file" multiple> <br><br> <!-- isme bese ak hi select kr skte he document but multiple type kr se bahut se kr skte he-->
+
+         <!--  add ulr  -->
+           <label for="">Linkedin/Github Profile</label><br>
+           <input type="url">
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <form action="">
+        <fieldset>
+            <legend>Table ki help se </legend>
+        <table>
+            <tr>
+                <td><label for="">UserName</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Last Name</label></td>
+                <td><input type="text" placeholder="Enter the last name" ></td>
+            </tr>
+            <tr>
+                <td><label for="">City Of</label></td>
+                <td><input type="text" placeholder="Enter the city name" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Employment:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Web server:</label></td>
+                <td><select > 
+                    <option disabled selected>chose a server</option>
+                    <option value="">Rama</option>
+                    <option value="">Radha</option>
+                    <option value="">Shyama</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="">Plese specify <br> your role</label></td>
+                <td>
+            <input type="radio"  name="gender" > 
+            <label for="male">Male</label><br>
+            <input type="radio"  name="gender" >
+            <label for="female ">Female</label><br>
+            <input type="radio"  name="gender" >
+            <label for="other">Other</label> 
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Single Sign-on <br> to the folling</label>
+                </td>
+                <td>
+                     <input type="checkbox"  value="mail"> 
+                     <label for="skill">Mail:</label> <br>
+                     <input type="checkbox">
+                     <label for="">Payroll</label> <br>
+                     <input type="checkbox">
+                     <label for="">Self-service</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan=""></td>
+                <td><input type="submit" value="Login"> <input type="reset"></td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>
