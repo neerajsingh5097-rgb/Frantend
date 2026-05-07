@@ -1,0 +1,42 @@
+.contener{
+
+    height: 100px;
+    width: 65%;
+    background-color: aqua;
+    border-style: solid;
+
+    /* border-top-style: dashed;
+    border-right: solid;
+    border-bottom: double;
+    border-left:dotted ; */
+
+    /* yahi code on eline ho jaye tab is type se hoga  */
+    /* border-style: solid dashed double dotted; */
+/*  yah clock wishe chalta he  if yahi ham kisi ko kuch nhi de tab ham none ka use jr skte he */
+  /* border-style: solid dashed dotted none; */
+  /* top $ bottom me -> solid left$right -> double */
+  /* border-style:solid double ; */
+
+  /* border-color: brown red green yellow; */
+  /* if boder ke top ka color change krna he tab */
+  /* border-top-color: blue;  */
+  /* border-width: 4px 0px; */
+
+  /* given the in div and border curve  */
+    /* border-radius: 50px 10px 15px 20px; */
+
+    border-style: ridge;
+    border-width: 10px;
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: lightcoral;
+    border-radius: 50%;
+    border: solid 5px black;
+    /*  circle element krne ke liyehame 
+     border- redius 50% leni hoti he
+    */
+
+}

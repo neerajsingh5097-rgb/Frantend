@@ -1,0 +1,36 @@
+.div1{
+    height: 150px;
+    width: 300px;
+    background-color: aqua;
+    border: solid yellow 5px;
+    border-radius: 25px; 
+    text-align: center;
+    
+}
+
+.div2{
+    height: 150px;
+    width: 300px;
+    background-color: aliceblue;
+    border: blue solid 3px;
+    text-align: center;
+    border-radius: 10px  80px 80px 10px;
+}
+.div3{
+    height: 150px;
+    width: 300px;
+     background-color: aliceblue;
+    border: red solid 3px;
+    text-align: center;
+    border-radius: 150px 150px  0px 0px;
+
+}
+
+.div4{
+    height: 150px;
+    width: 300px;
+    background-color: rgb(166, 209, 65);
+    border:gray solid 3px;
+    text-align: center;
+    border-radius: 1px 1100px ;
+}
