@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 50%;
+            background-color: lightblue;
+            border: 2px solid;
+            /* right bottom shadow light/ dark */
+            /* box-shadow: 5px 5px 10px black;  yah two side shadow banata he */
+            /* left top shadow light/dark */
+            /* box-shadow:-5px -5px 10px black ; */
+
+             /*  charo direction me shadow banane ke liye  */
+            /* box-shadow: 0px  0px 0px  10px yellow;   */
+
+            /*  box ke undar shadow banane ke liye ham inset ka use krte he */
+            /* box-shadow: inset 1px 1px 10px 10px yellowgreen; */
+
+            /* dubale shadow lagana he tab. teen or ke liye 3 value charo or ke liye four value dege */
+            /* box-shadow: 2px 2px 2px yellow, 5px 5px 5px red; */
+
+            /* box ke undar or bahar shadow chahiye tab */
+            /* box-shadow: 0px 0px 8px 4px yellowgreen inset, 5px 5px 10px  red; */
+
+            /* jab hame four side shadow chaheye tab ham  */
+            box-shadow: 1px 1px 1px 3px green, 1px 1px 1px 5px red;
+
+        }
+
+        /*  text me shadow dena ho tab */
+        .heading{
+            color: whitesmoke;
+            text-align: center;
+            text-shadow: 1px 1px 2px yellow;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            font-weight: 100;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Introducation to Shadow in Css</h1>
+    <div class="box"><h2 class="heading">Yah Ho </h2></div>
+</body>
+</html>
