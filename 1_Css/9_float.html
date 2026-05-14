@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 150px;
+            border: 1px solid;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.4rem;
+            /* isse yah left se aline ho jata he */
+            /* float: left; */
+        }
+        /*  if hame last bale ko right me aline krna ho tab ham box me nhi dege fir box3 me dege css ki properties */
+        .box1{
+         float: left;
+            margin-left: 20%;
+        }
+        .box2{
+            float: right;
+            margin-left: 20%;
+        }
+        .box3{
+            float: left;
+            margin-left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1" style="background-color: aqua;">Box 1</div>
+    <div class="box box2" style="background-color: blueviolet;">Box 2</div>
+    <div class="box box3" style="background-color: yellowgreen;" >Box3</div>
+    
+</body>
+</html>
+<!-- 
+Float: left, right
+element side by side alignment
+
+before flexbox was introdued
+we were using float properties to side by side aligment or navigation bar
+-->

@@ -1,0 +1,58 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+/* h1{
+    border: 2px solid black;
+} */
+
+.boxP{
+    border: 2px solid;
+    /* under ki taraf space dene ke liye */
+    /* padding: 10px;  */
+    /* alag 2 dena he side ke */
+    /* padding: 10px 20px; */
+    /* padding: 10px 20px 30px 40px; */
+    /* margin: 20px; */
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box1{
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.box2{
+    padding: 10px 5px;
+    background-color: lightcoral;
+}
+.boxM{
+    height: 100px;
+    width: 50%;
+    border: 1px solid;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.box3{
+    /* margin-top: 20px; */
+    /* margin-top: -20px; kene text upr chala jata he */
+    background-color: lightgreen;
+}
+.box4{
+    /* margin-top: 20px; */
+    background-color: rgb(214, 123, 123);
+    margin-left: 50%;
+    margin-top: -103px;
+}
+p{
+    margin-left: 85px;
+    /* niche krne se paragraf upr chala jata he isme koi date bhi isi type se kr skte he */
+    margin-top: -10px;
+}
