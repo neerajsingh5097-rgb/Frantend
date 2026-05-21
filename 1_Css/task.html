@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+        nav {
+            color: white;
+            background-color: black;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 5px 6px rgb(175, 174, 174);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .search {
+            float: left;
+            margin-top: -30px;
+            margin-left: 36%;
+        }
+
+        .search input {
+            width: 250px;
+            padding: 5px;
+        }
+
+        .input:focus {
+            background-color: lightblue;
+            border: 4px solid red;
+        }
+
+        .search button {
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+            background-color: rgb(50, 167, 137);
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search button:hover {
+            padding: 6px 8px;
+            color: black;
+            font-weight: bold;
+            background-color: rgb(30, 119, 97);
+        }
+
+        .navb {
+            float: right;
+            margin-top: -20px;
+        }
+
+        .navb a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            margin-left: 8px;
+        }
+
+        .navb a:hover {
+            font-size: 17px;
+            color: black;
+            padding: 5px 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        main {
+            width: 90%;
+            overflow: auto;
+            margin: auto;
+            padding-left: 10%;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 5px;
+            margin-left: -18%;
+        }
+
+        h3 {
+            padding: 5px;
+            color: rgb(35, 153, 133);
+            margin-left: -80%;
+        }
+
+        li {
+            width: 250px;
+            font-weight: bold;
+            padding: 5px;
+            margin-left: 10%;
+        }
+
+        li:nth-child(4) {
+            color: red;
+        }
+
+        li:last-child {
+            color: red;
+
+        }
+
+        li a {
+            padding-left: 15px;
+        }
+
+        li a:visited {
+            color: rgb(128, 143, 185);
+        }
+
+        .input1 {
+            border: 2px solid green;
+            border-radius: 5px;
+            background-color: lightyellow;
+            margin-left: -66%;
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        main p:first-child {
+            color: red;
+        }
+
+        section {
+            width: 22%;
+            float: left;
+            padding-bottom: 20px;
+            margin: 25px 18px;
+            border: 2px solid black;
+            border-radius: 15px;
+            box-shadow: 0 0 12px 1px gray;
+        }
+
+        .section1 {
+            border: 3px solid red;
+        }
+
+        .section2 {
+            border: 3px solid blue;
+        }
+
+        .section3 {
+            border: 3px solid gray;
+        }
+
+        section img {
+            width: 90%;
+            height: 240px;
+            margin: 12px;
+            border: 2px solid black;
+            border-radius: 15px;
+            box-shadow: 0 0 10px 1px gray;
+        }
+
+        section h2 {
+            color: rgb(2, 2, 90);
+            font-size: 26px;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        section p {
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        section h4 {
+            color: rgb(5, 153, 5);
+            font-size: 1.2rem;
+            margin: 10px;
+        }
+
+        section button {
+            color: white;
+            background-color: rgb(50, 167, 137);
+            padding: 6px 20px;
+            border: 1px solid black;
+            border-radius: 8px;
+            margin: 5px;
+            box-shadow: 0 5px 6px gray;
+        }
+
+        section button:hover {
+            font-size: 1.1rem;
+            color: black;
+            font-weight: bold;
+            background-color: aqua;
+            border: none;
+        }
+
+        .image {
+            margin-left: 100px;
+        }
+
+        .image img {
+            margin: 10px;
+            height: 280px;
+            width: 28%;
+            box-shadow: 0 0 9px 2px gray;
+        }
+
+        .image img:hover {
+            width: 30%;
+            height: 290px;
+        }
+
+        footer {
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">MyCompany</div>
+        <div class="search">
+            <input class="input" type="text" placeholder="Search here">
+            <button type="button">Search</button>
+        </div>
+        <div class="navb">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Nobis ducimus aperiam laudantium neque.</p>
+            <p>Fuga repudiandae voluptatibus dignissimos sequi?</p>
+            <h3>Products</h3>
+            <ol>
+                <li>Sports Shoes <a href="https://www.flipkart.com/" target="_blank">Click here</a></li>
+                <li>Smart Watch <a href="https://www.flipkart.com/" target="_blank">Click here</a></li>
+                <li>Mobile Phone <a href="https://www.flipkart.com/" target="_blank">Click here</a></li>
+                <li><del>Headphones <a href="https://www.flipkart.com/" target="_blank">Click here</a></del></li>
+                <li><del>Data Cable <a href="https://www.flipkart.com/" target="_blank">Click here</a></del></li>
+            </ol>
+            <input class="input1" type="text" placeholder="Order here">
+        </div>
+        <section class="section1">
+            <img src="https://media.istockphoto.com/id/1303978937/photo/white-sneaker-on-a-blue-gradient-background-mens-fashion-sport-shoe-sneakers-lifestyle.jpg?b=1&s=612x612&w=0&k=20&c=cNLaucibZy5Vq4r7dOCt9CNam6lejW3Zxw0Vho_z0mo="
+                alt="" />
+            <h2>Sports Shoes</h2>
+            <p>Comfortable and stylish shoes for everyday use.</p>
+            <h4>₹1999</h4>
+            <button type=" button">Add to Cart</button>
+        </section>
+        <section class="section2">
+            <img src="https://images.pexels.com/photos/31541678/pexels-photo-31541678.jpeg" alt="" />
+            <h2>Smart Watch</h2>
+            <p>Track fitness and stay connected with style.</p>
+            <h4>₹2999</h4>
+            <button type="button">Add to Cart</button>
+        </section>
+        <section class="section3">
+            <img src="https://images.pexels.com/photos/9403825/pexels-photo-9403825.jpeg" alt="" />
+            <h2>Mobile Phone</h2>
+            <p>Powerful smartphone with amazing camera quality</p>
+            <h4>₹15999</h4>
+            <button type="button">Add to Cart</button>
+        </section>
+    </main>
+    <div class="image">
+        <img src="https://images.pexels.com/photos/943596/pexels-photo-943596.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/32768000/pexels-photo-32768000.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/20385205/pexels-photo-20385205.jpeg" alt="">
+    </div>
+    <footer>
+        <p>&copy; 2026 MyWebsite | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

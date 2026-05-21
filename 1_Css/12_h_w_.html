@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Easy</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }   
+        /* Navbar */
+        nav {
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+            padding: 15px 30px;
+            border-bottom: 4px solid orange;
+            box-shadow: 0px 3px 10px gray;
+        }
+        .logo {
+            float: left;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .menu {
+            float: right;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin-left: 18px;
+            line-height: 35px;
+        }
+        /* content */
+        section {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        article {
+            width: 300px;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            border: 3px solid gray;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px gray;
+        }
+        article img {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            border: 2px solid black;
+            /* overflow: hidden; */
+        }
+        article h3 {
+            margin: 15px 0;
+            color: navy;
+        }
+        article p {
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(19, 16, 16);
+        }
+        article h4 {
+            margin: 15px 0;
+            color: green;
+            font-size: 22px;
+        }
+        article button {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            
+            background-color: rgb(44, 92, 182);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            course: pointer;
+            box-shadow: 1px 2px 5px gray;
+            
+        }
+
+    </style>
+</head>
+<body>
+      <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="logo">
+            Shop Easy
+        </div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Offers</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </nav>
+    <!-- Content   -->
+     <section>
+        <article>
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/394371/01/sv01/fnd/IND/fmt/png/Smashic-Comfort-Casual-Sneakers" alt="shoes">
+            <h3>Sport Shoes</h3>
+            <p>
+                
+                Comfortable and stylish shoes for everday use.
+            </p>
+            <h4>$59.99</h4>
+            <button> Add to Cart</button>
+        </article>
+
+        <article>
+            <img src="smart_watch.jpg" alt="smart watch">
+            <h3>Smart Watch</h3>
+            <p>
+                Track your fitness and stay connected with this sleek smart watch.
+            </p>
+            <h4>$199.99</h4>
+            <button> Add to Cart</button>
+        </article>
+
+        <article>
+            <img src="smartPhone.jpg" alt="smart phone">
+            <h3>Smart Phone</h3>
+            <p>
+                Stay connected with this powerful and feature-rich smartphone.
+            </p>
+            <h4>$699.99</h4>
+            <button> Add to Cart</button>
+        </article>
+
+        <article>
+            <img src="headPhone.jpg" alt="headphones">
+            <h3>Headphones</h3>
+            <p>
+                Experience crystal clear sound with these comfortable over-ear headphones.
+            </p>
+            <h4>$99.99</h4>
+            <button> Add to Cart</button>
+        </article>
+     </section>
+</body>
+</html>

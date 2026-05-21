@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(241, 241, 241);
+        }
+        /* header */
+        .container{
+            background-color: black;
+            padding: 20px;
+            color: white;
+            padding: 18px 60px;
+            overflow: auto;
+        }
+        .logo{
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav{
+            float: right;
+        }
+
+        .nav input{
+            padding: 8px 10px;
+            width: 180px;
+            border: none;
+            border-radius: 3px;
+            outline: none;
+        }
+        .nav button{
+            padding: 8px 10px;
+            background-color: rgb(0, 139, 139);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin: right 20px ;
+        }
+
+        .nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+        .con{
+            width: 90%;
+            margin:30px auto ;
+            overflow: auto;
+        }
+        .sidebar{
+            min-height: 450px;
+            width: 20%;
+            float: left;
+            border-radius: 10px;
+            box-shadow: 2px 5px 8px #999;
+            background-color: #f5f5f5;
+            border: 2px solid #999;
+        }
+
+        .sidebar h2{
+            font-size: 28px;
+            color: #000;
+            margin-bottom: 25px;
+        }
+        .sidebar ul{
+            list-style: none;
+            
+        }
+        .sidebar ul li{
+            padding: 18px;
+            font-size: 20px;
+            color: #333;
+            /* border-bottom: 1px solid #ddd; */
+        }
+        .content{
+            min-height: 410px;
+            width: 70%;
+            float: right;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border: #999 solid 2px;
+            border-radius: 10px;
+            box-shadow: -2px 5px 10px #999;
+        }
+        .content h1{
+            font-size: 52px;
+            margin-bottom: 25px;
+            color: #000;
+        }
+        .content p{
+            font-size: 21px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .content a{
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">MyWebsite</div>
+    
+        <div class="nav">
+            <input type="text" placeholder="Search here">
+            <button>Search</button>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </div>
+    <!-- Main Section  -->
+
+    <div class="con">
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React Js</li>
+                <li>MongoDB</li>
+            </ul>
+        </div>
+
+        
+    <!-- Content -->
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+
+        <p>
+            This webpage is created for practicing CSS properties like
+            float, width, height, padding, margin, border, border-radius,
+            and box-shadow.
+        </p>
+
+        <p>
+            Students can modify this layout and create their own designs
+            using float positioning and different CSS styles.
+        </p>
+
+        <a href="#" class="btn">Learn More</a>
+    </div>
+    </div>
+
+    <!-- Footer -->
+<div class="footer">
+    &copy; 2026 MyWebsite | All Rights Reserved
+</div>
+
+</body>
+</html>

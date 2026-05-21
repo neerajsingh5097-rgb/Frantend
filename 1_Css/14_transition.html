@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: yellow;
+            /* transition-property: all; */
+            /* transition-duration: 1s; */
+            /* transition-timing-function: ease; */
+             /* Transition effect for all properties, duration of 0.5 seconds, and easing function */
+
+            /* ease-in isme phle thoda slowe rhta 
+                ease-out isme akhir me thoda slowe rhta
+                ease-in-out isme dono tarf se thoda slowe rhta */
+
+                /*( transition-properties,transition-duration,transition-timing-function,transition-delay(iska means he kitne me kam krega ) )in sabhi ko ak line bhi likh skte he */
+
+                transition: all 1s ease 0.5s; /* Transition effect for all properties, duration of 1 second, easing function, and delay of 0.5 seconds */
+        }
+        .box:hover{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Transition Box</div>
+</body>
+</html>
+
+<!-- 
+Transition: A CSS property that allows you to create smooth animations when changing CSS properties. It defines the duration, timing function, and delay for the transition effect.
+            (this propery will work withhover state only)
+Example:
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: all 0.5s ease; /* Transition effect for all properties, duration of 0.5 seconds, and easing function */
+    }
+
+    Transition Properties:
+    1. transition-property: Specifies the CSS property to which the transition effect should be applied (e.g., width, height, background-color).{sabhi value ke liye all use krte he single value ke liye ham uska name provide krte he }
+    2. transition-duration: Specifies the duration of the transition effect (e.g., 0.5s, 1s).
+    3. transition-timing-function: Specifies the easing function for the transition effect (e.g., ease, linear, ease-in, ease-out).
+    4. transition-delay: Specifies the delay before the transition effect starts (e.g., 0s, 0.5s).
+
+-->

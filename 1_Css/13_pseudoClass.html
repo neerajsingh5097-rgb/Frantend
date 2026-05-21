@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 40px;
+            width: 120px;
+            background-color: teal;
+            border: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .btn1:hover{
+            background-color: orange;
+            color: black;
+        }
+
+        input:focus{
+            border: 3px solid teal;
+            outline: none;
+            background-color: yellow;
+        }
+
+        /* jab clicked krte he tab color change krta he */
+        .btn2:active{
+            background-color: red;
+        }
+
+        a:active{
+
+            color: red;
+           
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        a,:visited{
+            color: green;
+        }
+        ul li:first-child{
+            color: red;
+            font-size: 30px;
+        }
+        ul li:last-child{
+            color: green;
+        }
+        ul li:nth-child(2){
+            color: orange;
+        }
+        input:disabled{
+            background-color: black;
+            cursor: no-drop;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction to Pseudo-Classes in Css</h1>
+    <button class="btn1">Click Me</button>
+    <br><br>
+    <input type="text" placeholder="Enter Name">
+    <br><br>
+    <button class="btn2">Submit</button>
+    <br><br>
+
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+    <br><br>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>JavaScript</li>
+    </ul>
+    <br><br>
+
+    <input type="text" disabled>
+</body>
+</html>
+
+<!-- 
+
+Pseudo Class:
+A pseudo class is used to define the specific state of HTML element.
+It start with a :(colon)
+
+Syntax:
+selector:pseudo-class{
+    property:value;
+}
+
+Coomman Pseudo Classes:
+
+Pseudo Class		Description
+:hover             when mouse moves over an element
+:focus             when input is selected
+:active            when element is being clicked(anchor/button)
+:first-child       Select first child
+:last-child        Select last child
+:nth-child(n)     Select nth child(select 2nd child, select 3rd child, etc)
+:disabled          when element is disabled
+:visited           when link is visited(anchor)
+:link              when link is not visited(anchor)
+
+Important Note:
+Pseudo class use: sinle colon(:) , they define element state , useful for buttons form, navigation menu, interactive elements, website etc.
+
+-->

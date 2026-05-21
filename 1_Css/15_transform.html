@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: lightseagreen;
+            color: black;
+            text-align: center;
+            margin: 20px;
+            border-radius: 10px;
+            font-size:1.2rem; 
+            display: inline-block; /* yah display inline-block use krke ham side by side me element ko rkh skte he */
+            /* yah transition likhan jaruri he iske bina niche koi bhi properties work nhji kregi */
+            transition: transform 1s ease; /* Transition effect for all properties, duration of 1 second, and easing function */
+        }
+
+        .translateX:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: translateX(-50px); /* Move the element 50 pixels to the right, -50 pixels given value to move in left side */
+        }
+        .translateY:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: translateY(50px); /* Move the element 50 pixels down, -50 pixels given value to move in up side */
+        }
+        .translateZ:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: perspective(300px) translateZ(-50px); /* Move the element 50 pixels towards the viewer, -50 pixels given value to move away from the viewer */
+       /* mane bat isme perspective key word use krna padega tabhi yah zoom in zoom out ki trh work krega */
+        }
+        .translateXY:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: translate(50px, -50px); /* Move the element 50 pixels to the right and 50 pixels down */
+        }
+        .rotate:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: rotate(45deg); /* Rotate the element by 45 degrees */
+        }
+        .rotateX:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: perspective(300px) rotateX(45deg); /* Rotate the element around the X-axis by 45 degrees */
+            /* rotateX, rotateY, rotateZ ke liye perspective use karna padega */
+        }
+        .rotateY:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: perspective(300px) rotateY(45deg); /* Rotate the element around the Y-axis by 45 degrees */
+        }
+        .rotateZ:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: perspective(300px) rotateZ(45deg); /* Rotate the element around the Z-axis by 45 degrees */
+        }
+        .rotate3d:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: perspective(300px) rotate3d(1, 1, 1, 45deg); /* Rotate the element in 3D space by specifying the rotation axis and angle */
+        }
+        .skewX:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: skewX(30deg); /* Skew the element along the X-axis by 30 degrees */
+        }
+        .skewY:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: skewY(30deg); /* Skew the element along the Y-axis by 30 degrees */
+        }
+        .skewXY:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: skew(30deg, 30deg); /* Skew the element along both axes by 30 degrees */
+        }
+        .scale:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: scale(1.5); /* Scale the element to 1.5 times its original size */
+        }
+        .scaleX:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: scaleX(1.5); /* Scale the element along the X-axis to 1.5 times its original size */
+        }
+        .scaleY:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: scaleY(1.5); /* Scale the element along the Y-axis to 1.5 times its original size */
+        }
+        .scaleXY:hover{
+            background-color: lightcoral;
+            color: white;
+            transform: scale(1.5, 1.5); /* Scale the element along both axes to 1.5 times its original size */
+        }
+
+        .opacity{
+            width: 150px;
+            height: 150px;
+            background-color: lightseagreen;
+            color: black;
+            text-align: center;
+            margin: 20px;
+            border-radius: 10px;
+            font-size:1.2rem; 
+            display: inline-block; /* yah display inline-block use krke ham side by side me element ko rkh skte he */
+            transition: opacity 1s ease; /* Transition effect for all properties, duration of 1 second, and easing function */
+        }
+        .opacityB{
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            color: white;
+            text-align: center;
+            margin: 20px;
+            border-radius: 10px;
+            font-size:1.2rem;
+            transform: translate(55px,65px);
+            opacity: 0.5; /* Set the initial opacity to 0.5 */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box translateX">translateX</div>
+    <div class="box translateY">translateY</div>
+    <div class="box translateZ">translateZ</div>
+    <div class="box translateXY">translateXY</div>
+
+    <div class="box rotate">rotate</div>
+    <div class="box rotateX">rotateX</div>
+    <div class="box rotateY">rotateY</div>
+    <div class="box rotateZ">rotateZ</div>
+    <div class="box rotate3d">rotate3d</div>
+
+    
+    <div class="box skewX">skewX</div>
+    <div class="box skewY">skewY</div>
+    <div class="box skewXY">skewXY</div>
+    <div class="box scale">scale</div>
+    <div class="box scaleX">scaleX</div>
+    <div class="box scaleY">scaleY</div>
+    <div class="box scaleXY">scaleXY</div>
+
+    <hr>
+    <div class="opacity">Opacity
+            <div class="opacityB">Opacity B</div>
+
+    </div>
+</body>
+</html>
+<!-- 
+Transform: A CSS property that allows you to apply various transformations to an element, such as scaling, rotating, translating, and skewing. It enables you to manipulate the appearance of an element in a 2D or 3D space.
+        (it is a css properties that aloows you to visualyyan element ,shape,size,position, or
+        orientation with affaction document flow
+        It work on the visual layer,not the layout floe)
+What can Transform do?
+using transform we can do many things like
+move element,
+Rotate element,
+Scale element,(zoom in, zoom out)
+Skew element,
+Example:
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transform: rotate(45deg); /* Rotate the element by 45 degrees */
+    }
+
+Transform Functions:
+1. translate(x, y): Moves an element from its current position by the specified x and y values (e.g., translate(50px, 100px)).
+2. rotate(angle): Rotates an element by the specified angle (e.g., rotate(45deg)).
+3. scale(x, y): Scales an element by the specified x and y factors (e.g., scale(1.5, 1.5)).
+4. skew(x-angle, y-angle): Skews an element by the specified x and y angles (e.g., skew(30deg, 20deg)).
+5. matrix(a, b, c, d, e, f): Applies a 2D transformation using a matrix of six values (e.g., matrix(1, 0, 0, 1, 50, 100)).  
+
+{
+if container side by side krna he tab
+bloc-leve element-> inline element
+inline level element-> block level element
+krne ke liye display property use krte he
+display:inline-block; use krke side by side kr skte he}
+
+-->
