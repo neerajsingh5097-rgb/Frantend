@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation ko move krna </title>
+    <style>
+        .box {
+            height: 150px;
+            width: 150px;
+            border: 2px solid;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            margin: 10px;
+            /* iske bina move nhi krega yah dena hi padega  */
+            position: relative;
+            /* 1.phla animation name hota he
+            2.dusara kitani second me chalana he 
+            3.kitani bar chalana he
+            4.smooth chalane ke liye*/
+            animation: moveAnimation 4s infinite  1s linear;
+        
+        }
+        @keyframes moveAnimation {
+            0%{
+                background-color: red;
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                background-color: yellow;
+                top: 0px;
+                left: 500px;
+            }
+            50%{
+                background-color: aqua;
+                top: 400px;
+                left: 500px;
+            }
+            75%{
+                background-color: blue;
+                top: 400px;
+                left: 0px;
+            }
+            100%{
+                background-color: aquamarine;
+                top: 0px;
+                left: 0px;
+            }
+
+
+            /* advance tarika */
+            /* 0%{
+                transform: translate(0, 0);
+            }
+            25%{
+                transform: translate(200px, 0);
+            }
+            50%{
+                transform: translate(200px, 200px);
+            }
+            75%{
+                transform: translate(0, 200px);
+            }
+            100%{
+                transform: translate(0, 0);
+            } */
+        }
+
+        /* jab hame run time pr cusure la kr pouse krna ho stop krna ho tab */
+        .box:hover{
+            animation-play-state: paused;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- isme animation ko move krna hai -->
+    <div class="box">My animation box</div>
+</body>
+</html>

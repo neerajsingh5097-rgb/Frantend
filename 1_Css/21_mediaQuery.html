@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            height: 100px;
+            width: 80%;
+            background-color: rosybrown;
+            float: left;
+        }
+
+        .box2 {
+            height: 100px;
+            width: 20%;
+            background-color: lawngreen;
+            float: left;
+        }
+
+        @media screen and (max-width: 768px) {
+            .box1 {
+                width: 50%;
+            }
+
+            .box2 {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .box1 {
+                width: 100%;
+            }
+
+            .box2 {
+                width: 100%;
+                background-color: black;
+                color: white;
+            }
+
+        }
+        /*  screen sizes small krke dekho  */
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <h1>Container 1</h1>
+    </div>
+    <div class="box2">
+        <h1>Container 2</h1>
+    </div>
+
+</body>
+
+</html>
+<!-- 
+Media Query is used to make website responsive. It applies different CSS styles absed on screen size,device type etc.
+
+@media (condition){
+selector{
+property : value
+}}
+-->

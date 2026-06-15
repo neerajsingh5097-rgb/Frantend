@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafic Light</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 100px;
+            height: 300px;
+            border: 2px solid #000;
+            margin: 50px auto;
+            border-radius: 20px;
+            background-color: #333;
+             /* iske bina move nhi krega yah dena hi padega  */
+        }
+
+        .col {
+            width: 80%;
+            height: 25.33%;
+            background-color: #ccc;
+            border-radius: 50%;
+            align-items: center;
+            margin: 20px 10px 20px;
+            box-shadow: 0 -10px 20px lightslategray;
+           
+            
+             /* iske bina move nhi krega yah dena hi padega  */
+        }
+
+        .canta1 {
+            /* margin: 10px;
+            margin-top: 20px; */
+            animation: redAnimation 3s linear;
+        }
+         @keyframes redAnimation {
+             
+            0% {
+                background-color: lightslategray;
+            }
+
+            50% {
+                background-color: red;
+            }
+
+            100% {
+                background-color: lightslategray;
+            }
+        }
+
+        .canta2 {
+            animation: yellowAnimation 3s linear 3s ;
+        }
+
+        @keyframes yellowAnimation {
+         0% {
+                background-color: lightslategray;
+            }
+
+            50% {
+                background-color: yellow;
+            }
+
+            100% {
+                background-color: lightslategray;
+            }      
+          }
+        .canta3 {
+            animation: greenAnimation 3s linear 6s;
+        }
+     
+       
+        @keyframes greenAnimation {
+                0% {
+                background-color: lightslategray;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: lightslategray;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="canta1 col"></div>
+        <div class="canta2 col"></div>
+        <div class="canta3 col"></div>
+    </div>
+</body>
+</html>

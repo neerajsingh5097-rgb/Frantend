@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loading{
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            font-size: 10px;
+            border-radius: 50%;
+            border: 5px solid gray;
+            border-left-color: red ;
+            animation: loadingAnimation 1s linear infinite;
+        }
+        h3{
+            margin: 0;
+            padding: 10px;
+        }
+
+        @keyframes loadingAnimation {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="loading"><h3>loading box</h3></div>
+    <div style="height: 80px; width: 80px; border-radius: 50%; border: 5px solid gray; margin-top: 20px; border-left-color: yellow; border-top-color:red ; animation: loadingAnimation 1s linear infinite;"></div>
+</body>
+</html>

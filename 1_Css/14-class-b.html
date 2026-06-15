@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container
+        {   
+            height: 150px;
+            width: 150px;
+            position:relative;
+            margin: 60px;
+        }        
+
+        .box1
+        {
+            background-color: rgb(144, 30, 250);
+            opacity: 0.5;    
+        }
+        
+        .box2
+        {
+            background-color: rgb(136, 28, 237);
+            opacity: 0.6;
+        }
+
+        .box3
+        {
+            background-color: blueviolet;
+        }
+
+        .container:hover{
+            .box1
+            {
+                transform: rotate(20deg);
+            }
+
+            .box2
+            {
+                transform: rotate(40deg);
+            }
+
+            .box3
+            {
+                transform: rotate(60deg);
+            }
+        }
+
+        .box
+        {   
+            height:150px;
+            width: 150px;
+            border-radius: 20px;
+            position: absolute;
+            transform-origin: bottom right;
+            transition: transform 2s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+</html>

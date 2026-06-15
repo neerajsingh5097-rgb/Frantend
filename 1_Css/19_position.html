@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1500px;
+        }
+        /* perent */
+        .container{
+            height: 400px;
+            width: 75%;
+            border: 2px solid;
+            position: relative;
+        }
+        .box{
+            height: 100px;
+            width: 150px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 1px solid;
+            /*  isse box ak line ho jat h */
+            display: inline-block;
+        }
+        /* child */
+        .box2{
+            /* position:static;
+            top: 100px; */
+
+            /*
+            position: relative; /* yah perernt koi matlv nhi rkhata he yah independent he
+            top: 500px;
+            bottom: 100px:  /* isme value incres krne se yah container se bahar aa jata he 
+           */
+
+           /*  isme box3 box2 ki position par jata he jab tak aap position relative(container me ) nhi lagate he tab tak yah body ko perent manata he oske according work krta he */
+           /* position: absolute;
+           top: 100px;
+           right: 50px; */
+           
+/*           hamne bady ki hight de di he to yah body ke hisab se kam krta he body me scoll bar aa gya he to scoll krne pr bhi yah fixed rhta he */
+           /* position: fixed;
+           top: 100px;
+           right: 50px; */
+
+           position: sticky;
+           /* yah thoda relative ki trh kam krta he */
+           /* yah parent container ki acorring kam krta he */
+           top: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="background-color: coral;">Box 1</div>
+        <div class="box box2" style="background-color: lightgreen;">Box 2 </div>
+        <div class="box" style="background-color:slateblue;">Box 3</div>
+    </div>
+</body>
+</html>
+<!-- 
+Position in Css: use to change position of element/container frome one position to another
+top, bottom,left,right
+Type of position
+1. static: default behaviour of element, normal flow of the document. It'll not change the position using top, bottom,left.right
+2. relative: initially normal flow of the document but It'll change position when you applied top/bottom,left/
+right properties, it'll change position from it's own position. independent
+3. absolute: it'll remove from document, It'll change position according to the body if there is not a 
+relative parent element.
+4. fixed: element will be fixed in your viewport, navbar, footer
+5. sticky: relative + fixed(fied within a parent element)
+-->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        height: 150px;
+        width: 150px;
+        border: 2px solid;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        margin: 10px;
+        animation-name:firstAnimation;
+        animation-duration: 2s;
+        /* animation cout kitani bar chalana he isliye use kiya jata he  */
+        /* ise infinete bhi kr skte he  kitani bar kre utabi value de skte he*/
+        animation-iteration-count: 1;
+        /* isse animation ak dam se smoth chalane lgta he */
+        animation-timing-function: linear; 
+        animation-delay: 1s;
+        
+    }
+    @keyframes firstAnimation {
+        0%{
+            background-color: red;
+            border-radius: 0px;
+        }
+        25%{
+            background-color: yellow;
+            border-radius: 25%;
+        }
+        50%{
+            background-color: aqua;
+            border-radius: 50%;
+        }
+        75%{
+            background-color: blue;
+            border-radius: 25%;
+        }
+        100%{
+            background-color: aquamarine;
+            border-radius: 0px;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="box box1">My animation box</div>
+    
+
+</body>
+</html>

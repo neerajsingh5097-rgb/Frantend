@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* parent */
+        .container {
+            height: 400px;
+            width: 75%;
+            border: 2px solid;
+
+        }
+
+        .box {
+            height: 100px;
+            width: 150px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 1px solid;
+            display: inline-block;
+        }
+
+        .box1 {
+            position: relative;
+            top: 50px;
+            left: 100px;
+            z-index: 2;
+        }
+
+        .box2 {
+            position: relative;
+            top: 20px;
+            z-index: 1;
+
+
+        }
+
+        .box3 {
+            position: relative;
+            left: 100px;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1" style="background-color: coral;">Box 1</div>
+        <div class="box box2" style="background-color: lightseagreen;">Box 2</div>
+        <div class="box box3" style="background-color: slateblue;">Box 3</div>
+    </div>
+</body>
+
+</html>
+<!-- 
+take a paragraph and image
+show paragraph content in image
+-->

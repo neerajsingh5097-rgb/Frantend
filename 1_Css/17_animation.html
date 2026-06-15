@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isme defferent type animation </title>
+    <style>
+            .box{
+        height: 150px;
+        width: 150px;
+        border: 2px solid;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        margin: 10px;
+      
+        
+    }
+
+    .box1{
+    /*   is sab ko ak line me kese likhte he dekhate he 
+       animation-name:firstAnimation;
+        animation-duration: 2s;
+       /* animation cout kitani bar chalana he isliye use kiya jata he 
+        ise infinete bhi kr skte he  kitani bar kre utabi value de skte he
+        animation-iteration-count: infinite;
+        /* isse animation ak dam se smoth chalane lgta he 
+        animation-timing-function: linear; 
+        animation-delay: 1s; */
+    
+        animation: firstAnimation 2s linear 1s infinite;
+    }
+
+    .box2{
+        animation: secondAnimation 2s linear 1s infinite;   
+    }
+    @keyframes firstAnimation {
+        0%{
+            background-color: red;
+            border-radius: 0px;
+        }
+        25%{
+            background-color: yellow;
+            border-radius: 25%;
+        }
+        50%{
+            background-color: aqua;
+            border-radius: 50%;
+        }
+        75%{
+            background-color: blue;
+            border-radius: 25%;
+        }
+        100%{
+            background-color: aquamarine;
+            border-radius: 0px;
+        }
+        
+    }
+
+    @keyframes secondAnimation {
+        0%{
+            background-color: red;
+            border-radius: 0px;
+            
+        }
+
+        100%{
+            background-color: aquamarine;
+            border-radius: 0px;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="box box1">My animation box</div>
+    <!-- isme alg alg animation lagana he tab dekhate he -->
+    <div class="box box2">My animation box</div>
+</body>
+</html>

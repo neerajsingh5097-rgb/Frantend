@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#eef1f5;
+}
+
+/* Header */
+header{
+    background:#183a96;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Layout */
+.container{
+    display:flex;
+    min-height:calc(100vh - 120px);
+}
+
+/* Sidebar */
+.sidebar{
+    width:250px;
+    background:#2563eb;
+    color:white;
+    padding:20px 15px;
+}
+
+.sidebar h2{
+    margin-bottom:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin-bottom:12px;
+}
+
+.sidebar ul li a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,0.15);
+    padding:12px;
+    border-radius:5px;
+}
+
+.sidebar ul li a:hover{
+    background:rgba(255,255,255,0.25);
+}
+
+/* Content */
+.content{
+    flex:1;
+    padding:30px;
+}
+
+.content h1{
+    margin-bottom:10px;
+}
+
+.content p{
+    margin-bottom:25px;
+}
+
+/* Cards */
+.cards{
+    /* display:grid; */
+    display:flex;
+    flex-wrap:wrap;
+    /* margin-right: 300px; */
+    /* grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); */
+    gap:20px;
+}
+
+.card{
+    width:250px;
+    /* flex-grow:1; */
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+/* Footer */
+footer{
+    background:#183a96;
+    color:white;
+    text-align:center;
+    padding:12px;
+}
+
+/* Responsive */
+@media(max-width:500px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        /* gap: equal(10px); */
+        justify-content:center;
+    }
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .content{
+        padding:20px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">My Website</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content -->
+        <main class="content">
+            <h1>Welcome to Dashboard</h1>
+            <p>
+                This is the main content section where you can display reports,
+                statistics, user information and other details.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p>1,250 Active Users</p>
+                </div>
+
+                <div class="card">
+                    <h3>Orders</h3>
+                    <p>560 Orders Completed</p>
+                </div>
+
+                <div class="card">
+                    <h3>Revenue</h3>
+                    <p>₹75,000 This Month</p>
+                </div>
+
+                <div class="card">
+                    <h3>Products</h3>
+                    <p>120 Products Available</p>
+                </div>
+
+                <div class="card">
+                    <h3>Customers</h3>
+                    <p>320 New Customers</p>
+                </div>
+
+                <div class="card">
+                    <h3>Feedback</h3>
+                    <p>95% Positive Reviews</p>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 My Website. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

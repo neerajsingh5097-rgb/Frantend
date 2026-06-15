@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .navbar {
+            background-color: #555;
+            overflow: auto;
+        }
+
+        .navbar a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #222;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            width: 28%;
+            height: 100px;
+            float: left;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            margin: 1.66%;
+            padding: 5px;
+        }
+/* yah isliye kiya he kyuki jo footer he vo card right me aa rha he ise  next line me lane ke liye yah krna pada he  use this properties  */
+        /* pseudo element :: */
+        .container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            /* margin-top: 20px; */
+        }
+
+        /* ------------------------------ */
+        /* MEDIA QUERY */
+        /* ------------------------------ */
+        @media screen and (max-width: 768px) {
+            .card {
+                width: 43%;
+                margin: 2%;
+            }
+
+            body {
+                background-color: wheat;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: center;
+            }
+
+            .card {
+                width: 90%;
+                margin: 2%;
+            }
+
+            body {
+                background-color: whitesmoke;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>My Responsive Website</h1>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>Sample Content for Students.</p>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>Sample Content for Students.</p>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>Sample Content for Students.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

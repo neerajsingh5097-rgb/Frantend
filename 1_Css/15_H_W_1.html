@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        body{
+            background-color: black;
+            font-style: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            width: 400px;
+            height: 250px;
+            background-color: red;
+            margin: 100px auto;
+            border-radius: 20px;
+        }
+            .box:hover{
+                transform:perspective(500px) rotateY(20deg) rotateX(10deg) translateY(-20px) scale(1.1);
+                transition: all 0.5s ease;
+                box-shadow: 0px 10px 20px rgba(226, 89, 89, 0.781);
+            }
+            h1,h3{
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
+            .box:hover h1,.box:hover h3{
+                opacity: 1;
+            }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 style="color: white;  padding-left: 20px; padding-top: 20px;padding-right: 20px; font-family: 20px;">3D Animated Card</h1>
+        <h3 style="color: white; padding-left: 20px; padding-right: 20px; font-size: 20px;">The card rotates in 3D,scales up,and reveals test with smopth transition</h3>
+    </div>
+</body>
+</html>
