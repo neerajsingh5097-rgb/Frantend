@@ -6,14 +6,14 @@
 // total number of elements - start with 1
 
 // let language = ["JavaScript", "Python","Java" , "c++", 1234,true,["A","B"]]
-// we can access elements using array[index]
+// // we can access elements using array[index]
 
 // console.log(language[1])
 // console.log(language)
-// accessing nested array element - arr[nested arrayn index][element index]
+// // accessing nested array element - arr[nested arrayn index][element index]
 // console.log(language[6][1])
 
-// Length of an array - arr.length
+// // Length of an array - arr.length
 // console.log(language.length) //7
 // -----------------------------------------------------------------------------------------
 // Array Methods:
@@ -21,11 +21,11 @@
 // koi bhi elements ko add krne ke liye push() method ka use krte he 
 // arr_language.push("CSS");  // this is add the element in last position array
 // console.log(arr_language)
-// ======
-// if you want to add the elements in first(like 0th index) position of array than you use to unshift() method is use
+// // ======
+// // if you want to add the elements in first(like 0th index) position of array than you use to unshift() method is use
 // arr_language.unshift("Hindi")
 // console.log(arr_language)
-// =======
+// ===============================================================================
 // remove element to use pop() method  use to delete element of array(last element ko delete krta he)
 // arr_language.pop();  // this method to delete the last element of array
 // arr_language.splice(2,1);  // remove element from specific element - ( indexing, number of element)
@@ -42,7 +42,7 @@
 
 // access first element
 // console.log(arr_language[0])
-// access last element: using length keyword interview mw puchta he
+// // access last element: using length keyword interview mw puchta he
 // console.log(arr_language[arr_language.length-1])  // isme braket lagana jaruri he nhi to yah index print kr dega
 // --------------------------------------------------------------------------------------------------------
 
