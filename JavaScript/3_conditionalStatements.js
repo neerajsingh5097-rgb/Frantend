@@ -167,16 +167,61 @@
 //   }
 // ------------------------------------------------------------------------------------------------------
 // Q. take three input and find witch one is secound largest number
-let num1 = 40;
-let num2 = 50;
-let num1 = 20;
-// (num1 < num3 && num1 > num2 )||(num1 < num2 && num1 > num3)
-if( (num1 < num3 && num1 > num2 )||(num1 < num2 && num1 > num3)){
+// let num1 = 40;
+// let num2 = 50;
+// let num1 = 20;
+// // (num1 < num3 && num1 > num2 )||(num1 < num2 && num1 > num3)
+// if( (num1 < num3 && num1 > num2 )||(num1 < num2 && num1 > num3)){
+
+// }
+
+// ==========================================================================================
+// new topic
+// ------------------------------------------------------------------------------------------
+
+// A switch Statements is used to excute diffrent block of code depending on diffrent cases:
+
+// decleration
+// switch (type)
+// case 1 : if case is matched
+// block of code
+// default:
+
+// Q.  day 1 =  Monday, day 2 = Tuesday, day 3 = Wednesday.......so on
+
+// var num = parseInt(prompt("Enter the number and find the day name : "))
+//   switch (num) {
+//     case 1: 
+//       console.log("Monday")
+//       break;
   
-}
-
-
-
+//     case 2: 
+//        console.log("Tuesday");
+//        break;
+//     case 3: 
+//     console.log("Wednesday");
+//     break;
+//    case 4: 
+//       console.log("Thursday")
+//       break;
+  
+//     case 5: 
+//        console.log("Friday");
+//        break;
+//     case 6: 
+//     console.log("Saturday");
+//     break;
+//    case 7: 
+//     console.log("Sunday");
+//     break;
+  
+//     default:
+//       console.log(
+//         "invailid data"
+//       )
+//       break;
+//   }
+// ----------------------------------------------------------------------------------------------------
 
 // Display the following mwnu using prompt()
 // ATM Menu:
@@ -233,26 +278,106 @@ if( (num1 < num3 && num1 > num2 )||(num1 < num2 && num1 > num3)){
 //         alert("Invalid choice");
 // }
 
-let x = 0;
-let y = 2;
-let z = 4;
+// let x = 0;
+// let y = 2;
+// let z = 4;
 
-if (x >= y && x >= z) {
-  if (y >= z) {
-    console.log(x + ", " + y + ", " + z);
-  } else {
-    console.log(x + ", " + z + ", " + y);
+// if (x >= y && x >= z) {
+//   if (y >= z) {
+//     console.log(x + ", " + y + ", " + z);
+//   } else {
+//     console.log(x + ", " + z + ", " + y);
+//   }
+// } else if (y >= x && y >= z) {
+//   if (x >= z) {
+//     console.log(y + ", " + x + ", " + z);
+//   } else {
+//     console.log(y + ", " + z + ", " + x);
+//   }
+// } else {
+//   if (x >= y) {
+//     console.log(z + ", " + x + ", " + y);
+//   } else {
+//     console.log(z + ", " + y + ", " + x);
+//   }
+// }
+
+
+// let num = 10;
+
+// while (num>=1) {
+//   console.log(num)
+//   num--;
+  
+// }
+
+// let num1 =105;
+
+// while (num1>=7) {
+//    console.log(num1);
+//    num1= num1 -7;
+  
+// }
+
+// let n = 1;
+// sum=0;
+// while (n<=10) {
+//   sum = sum+n;
+//   n++;
+// }
+// console.log(sum)
+
+// let n = 1;
+// sum=0;
+// while (n<=20) {
+//   if(n % 2 ===0){
+//     sum = sum + n;
+//   }
+//   n++;
+// }
+// console.log(sum)
+
+// let n = parseInt(prompt("enter the number:"))
+// count = 0;
+// i=1;
+// while (i<=n) {
+//   if (i % 2 ===0) {
+//     count++;
+//   }
+//   i++
+// }
+// console.log(count)
+
+// for (let i = 0; i <= n; i++) {
+//   if (i % 2 ===0) {
+//     count++;
+//   }
+  
+// }
+
+// let num1 = parseInt(prompt("enter the first number:"))
+
+// let num2 = parseInt(prompt("enter the 2nd number :"))
+
+// for (let i = num1; i <= num2; i++){
+//   console.log(i)
+
+// }
+
+let n = 10;
+number = 0;
+ for(let i =1;i<=n; i++){
+  for(let j = 2; j<=i-1; j++){
+    if(i % j ===0){
+      number++;
+      // console.log(i)
+    }
   }
-} else if (y >= x && y >= z) {
-  if (x >= z) {
-    console.log(y + ", " + x + ", " + z);
-  } else {
-    console.log(y + ", " + z + ", " + x);
+  if (number ===0) {
+    console.log("number is prime to print " + i)
+  }else{
+    number=0;
   }
-} else {
-  if (x >= y) {
-    console.log(z + ", " + x + ", " + y);
-  } else {
-    console.log(z + ", " + y + ", " + x);
-  }
-}
+ }
+
+
