@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #btn {
+        background-color: #04AA6D;
+        border: none;   
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Introduction to DOM in JavaScript</h1>
+    <h2 id="heading">This is a normal heading</h2>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quasi.
+    </p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates vitae
+      non nemo doloremque.
+    </p>
+    <img 
+      src="data:image/jpeg;base64,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
+    "
+      alt=""
+      height="200px"
+      width="200px"
+      class="image"
+    />
+    <br />
+    <button id="btn">Click Here</button>
+    <ul class="List1">
+        <li>List 1 Item 1</li>
+        <li>List 1 Item 2</li>
+        <li>List 1 Item 3</li>
+    </ul>
+    <ul class="List2">
+        <li>List 2 Item 1</li>
+        <li>List 2 Item 2</li>
+        <li>List 2 Item 3</li>
+    </ul>
+
+    <script>
+       let hello = document.getElementById("heading")
+        console.log(hello) // isliye kiya he koi bhi error hogi to console pr aati he or usse pata bhi chalat he ki usne yahi seclet kiya he ki nhi ise na likho to koi jarurat nhi he 
+        hello.innerText = "Updated heading using DOM"
+    </script>
+  </body>
+</html>
+<!-- 
+DOM:
+when web page is loaded though HTML/XML brower create a document object model of a structure(DOM tree)
+It allows JavaScript to interact with and manipulate the content,
+structure, and styles of a webpage.
+
+button-> click on button -> poppup ana chahiye
+
+steps:
+1. target element -(jise change krna he to use phle target krna he  )
+2. store that element into a js variable -(ise ak new variable me store kr lete he )
+3. manipulation(update/add/remove)- ( fir isme manipulation kr dete he )
+
+DOM Method:
+1.  document.getElementById("id") - unique (ak ki id hoti he isliye)
+2.  document.getElementsByClassName("class")- multiple elements (isme element me s laga he class jada tar sbki same hoti he isliye)- return array
+3. document.querySelector("#id/.class/elementName(h2)") - target first match element/selector(isme jo phle mil jaye use select kr leta he maan ke chalo h1, h2 h3 he ise phle h1 mil gyi to ise select kr lega )
+4. document.querySelectorAll(".class p/ul li/#id h3") - return array(yah sabhi ko select kr leta he chahe phale mile ya fir last me ise koi mtlav nhi he )
+
+Update: content/image
+to update text - innerText = "Updated text....."
+to update html element - innerHTML ="<h3> Text</h3>"  // isme jese p ko h me convert krna he to ise krte he like p to h,h to p etc html element(innerHHTML ka use bHut kam hota he)
+-->
