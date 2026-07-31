@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <!-- <li>Item 4</li> -->
+    </ul>
+    <!-- isme button pr click krne ak item add hon chahiye  -->
+    <button onclick="handleAdd()">Add Item</button>
+    <button ondblclick="bdl()">duble click Remove Item</button>
+    <!-- toLowerCase() -->
+
+    <script>
+      let list = document.getElementById("list");
+      //   function handleAdd() {
+      //     let li = document.createElement("li");
+      //     li.textContent = "Itme 4";
+      //     list.appendChild(li);
+      //   }
+
+      function handleAdd() {
+        let newItem = prompt("Enter a itme you want to add");
+        if (newItem) {
+          let li = document.createElement("li");
+          li.textContent = newItem;
+          list.appendChild(li);
+        }
+      }
+
+    //   remove Itme
+    function bdl(){
+        let remItem = prompt("Delite element")
+        if(remItem){
+        list.removeChild(list.children[0])
+
+        }
+    }
+    </script>
+  </body>
+</html>
+<!-- when you click on add item button, item should be added in list -->

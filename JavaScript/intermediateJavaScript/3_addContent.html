@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- parent -->
+    <ul id="list">
+        <!-- children -->
+        <!-- <li>Item 1</li> -->
+        <!-- firstElementChild -->
+        <li>Item 2</li>
+       <!-- firstElementChild -->
+        <li>Item 3</li>
+        <!-- previousElementSibling -->
+        <li>Item 4</li>
+        <!-- lastElementChild -->
+    </ul>
+
+    <ul id="list1">
+        <!-- children -->
+         <!-- firstElementChild -->
+        <li>Home</li>
+        <!-- nextElementSibling -->
+        <li>About</li>
+        <!-- nextElementSibling -->
+         <!-- Add krna he -->
+        <!-- <li>Service</li> -->
+         <!-- yah bhi add nkrna he -->
+        <li>price</li>
+        <!-- Add this element using previousElementSibiling -->
+        <!-- <li>Loading</li> -->
+        <!-- previousElementSibling -->
+        <li>Contact</li>
+        <!-- lastElementChild -->
+    </ul>
+    <script>
+        // let list = document.getElementById("list")
+        // let li = document.createElement("li")
+        // li.textContent = "Item 1";
+        // let position = list.firstElementChild;
+        // // let position = list.lastElementChild;
+        //  console.log(position)
+        // //  ise aise bhi likh skte he linr number 28 or 30 same he 
+        // list.insertBefore(li,list.firstElementChild)
+        // // list.insertBefore(li,position)
+
+        // or  aise bhi add kr skte her 
+
+        // using nextElementSilibing 
+        // let list1 = document.getElementById("list1")
+        // let li1 = document.createElement("li")
+        // li1.textContent = "Service"
+        // let pos = list1.firstElementChild.nextElementSibling.nextElementSibling;  // next jitni bar late he utni bar yah aage bale element ko target krta he
+        // console.log(pos)
+        // list1.insertBefore(li1,pos)
+
+        // using previousElementSibiling 
+        let list1 = document.getElementById("list1")
+        let li2 = document.createElement("li")
+        li2.textContent="Loading"
+        let pos = list1.lastElementChild.previousElementSibling;
+        console.log(pos)
+        list1.insertBefore(li2, pos)
+        // let pos = list
+       
+        // let pos = list.firstElementChild.nextElementSibling;
+                // let pos = list.children[0];
+
+    </script>
+</body>
+</html>
+<!-- 
+insertBefore(li,targeted position) 
+firstElementChild
+lastElementChild
+nextElementSibling
+previousElementSibiling
+-->

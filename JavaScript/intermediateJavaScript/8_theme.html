@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+        <button id="btn">light</button>
+
+        <script>
+            let btn = document.getElementById("btn");
+            let body = document.querySelector("body")
+            btn.addEventListener("click",function (){
+                if(btn.innerText === "light"){
+                    body.style.backgroundColor = "black";
+                }else{
+                    body.style.backgroundColor = "white";
+                }
+                //  if esle ki condition ko one line convert krna ho tab
+                // btn.innerText= btn.innerText  ==="light" ? "dark" : "light"
+            })
+        </script>
+</body>
+</html>

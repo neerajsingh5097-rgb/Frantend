@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Text Example</title>
+  </head>
+  <body>
+    <!-- --------------------------------------------- -->
+    <!-- <p id="myParagraph">This is the original text.</p>
+    <button id="myButton">Click Me</button> -->
+
+<!-- ------------------------------------------------------------- -->
+    <!-- <button id="toggleBtn">Show Secret Message</button>
+    <p id="hiddenText">Surprise! This paragraph was hidden, but now you can see it using JavaScript DOM manipulation.</p> -->
+
+<!-- --------------------------------------------------- -->
+     <!-- The <h2> element initialized to 0 -->
+    <h2 id="counter">0</h2>
+
+    <!-- The button that triggers the increase -->
+    <button id="increment-btn">Increase</button>
+
+    <script>
+      // // Q.1
+      // // Select the button and paragraph elements from the DOM
+      // let button = document.getElementById('myButton');
+      // let paragraph = document.getElementById('myParagraph');
+
+      // // Add a click event listener to the button
+      // button.addEventListener('click', function () {
+      //     // Change the paragraph text using innerText
+      //     paragraph.innerText = 'Hello World!';
+      // });
+
+      // Q.2
+      // let button = document.getElementById("myButton")
+      // let body = document.querySelector("body")
+
+      // button.addEventListener('click', function (){
+      //     body.style.backgroundColor ="yellow"
+      // })
+
+      // // Q.3
+      //   let button = document.getElementById('myButton');
+      //   let paragraph = document.getElementById('myParagraph');
+
+      //   button.addEventListener('click', function (){
+      //     paragraph.style.display="none"
+      //   })
+
+      // // Q.4
+
+    //    // Select the button and paragraph elements from the DOM
+    //     const button = document.getElementById('toggleBtn');
+    //     const paragraph = document.getElementById('hiddenText');
+
+    //     // Add a click event listener to the button
+    //     button.addEventListener('click', () => {
+    //         // Check current display state and toggle it
+    //         if (paragraph.style.display === 'block') {
+    //             paragraph.style.style.display = 'none';
+    //             button.textContent = 'Show Secret Message';
+    //         } else {
+    //             paragraph.style.display = 'block';
+    //             button.textContent = 'Hide Secret Message';
+    //         }
+    //     });
+    // ------------------------------------------------
+    //// Q.5
+       // 1. Select the DOM elements
+        // let counterDisplay = document.getElementById('counter');
+        // let incrementButton = document.getElementById('increment-btn');
+
+        // // 2. Initialize the counter variable
+        // let count = 0;
+
+        // // 3. Add a click event listener to the button
+        // incrementButton.addEventListener('click', function () {
+        //     // Increase the count variable by 1
+        //     count++;
+            
+        //     // Update the text content of the <h2> element
+        //     counterDisplay.textContent = count;
+        // });
+
+        // // Q.6 self try kro 
+    </script>
+  </body>
+</html>
+<!-- 
+1. Change Text
+   Create a button. When clicked, change a paragraph’s text to “Hello World!”. - innerText
+
+2. Change Background Color
+   Create a button. When clicked, change the page background color to yellow.
+
+3. Hide a Paragraph
+   Create a button that hides a paragraph when clicked. - style.display = "none"
+
+4. Show a Hid
+   Create a hidden paragraph and a button. When the button is clicked, display the paragraph.den Paragraph
+
+5. Increase a Number
+   Display 0 in a <h2>. Each button click should increase the number by 1.
+
+6. Decrease a Number
+   Display 10 in a <h2>. Each button click should decrease the number by 1.
+-->

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Note isme koi elements add hota he to last me hota he if add the element in first and other position to cheak the 3_addContent.html file -->
+    <div id="myDiv">
+        <h2>Welcome to my website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolor facere ipsum corporis minus cupiditate
+            laudantium, dicta soluta possimus, quaerat placeat nihil quae qui hic modi repellat quos. Perferendis, nam!
+        </p>
+        <!-- add the h3 tag in div using DOM properties -->
+        <!-- <h3>Thanks for visiting my website</h3> -->
+    </div>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <!-- <li>Item 4</li> -->
+    </ul>
+
+    <table border="">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+        <!-- <tr>
+            <td>Alice</td>
+            <td>26</td>
+        </tr> -->
+
+    </table>
+
+    <script>
+    //     let myDiv = document.getElementById("myDiv")
+    //     let h3 = document.createElement("h3")
+    //     h3.textContent = "Thanks for visiting my website"
+    //     console.log(h3)
+    //     myDiv.appendChild(h3)
+    //    // ------------------------------------------
+    //     let mydiv = document.querySelector("#myDiv")
+    //     let p = document.createElement("p")
+    //     console.log(p)
+    //     mydiv.appendChild(p)
+
+        //-------------------------------------------------- //
+        // let list = document.querySelector("ul")
+        // let item = document.createElement("li")
+        // console.log(item)
+        // item.textContent = "Item 4";
+        // list.appendChild(item)
+
+        // -------------------------------------------------- //
+        let table = document.querySelector("table")
+        // let row = document.createElement("tr")
+        // let td1 = document.createElement("td")
+        // td1.textContent = "Alice"
+        // let td2 = document.createElement("td")
+        // td2.textContent = 28;
+        // row.appendChild(td1)
+        // row.appendChild(td2)
+        // table.appendChild(row)
+        let tr = document.createElement("tr")  // in this line to create tr 
+        console.log(tr)
+        let td1 = document.createElement("td") // in this line to create td 
+        td1.textContent = "Alic" // in this line to store the Alic in td
+        console.log(td1)
+        tr.appendChild(td1)  // in this line to display in tr (yh data ko ko tr ko dedeta he)
+        let td2 = document.createElement("td") // in this to create a new td
+        td2.textContent = "26" // td store the content 
+        console.log(td2)
+        tr.appendChild(td2) 
+
+        table.appendChild(tr) // tr ka data ab table me store me store ho jayega or display kr dega browser pr
+
+
+
+    </script>
+</body>
+
+</html>
+<!-- 
+to create new element -document.createElement("li")
+to add content - textContent = "Item 4"
+target parent
+appendChild(li) - insert in last index
+-->

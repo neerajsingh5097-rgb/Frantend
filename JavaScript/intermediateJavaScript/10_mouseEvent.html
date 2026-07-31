@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Event</title>
+    <style>
+      button {
+        background-color: #000800;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Mouse Over/Mouse Out</button>
+    <button id="btn2">Mouse Down/Mouse Up</button>
+
+    <script>
+        let btn = document.getElementById("btn1")
+         btn.addEventListener("mouseover", function(){
+            console.log("mouse event  is activeted")  // isme console me ja kr Mouse Over/Mouse Out ja kr hover krte he tab yah console me count ko badea deta he 
+         })
+         btn.addEventListener("mouseout", function(){
+            console.log("mouse out event actived")   
+         })
+         // note-> ak element ke multiple event add kr skte he jese upr kiya ha 
+
+        //  ======================================
+        let btn2= document.getElementById("btn2")
+        btn2.addEventListener("mousedown", function(){
+            btn2.innerText = "Mouse button is held down"
+        })
+        btn2.addEventListener("mouseup", function(){
+            btn2.innerText = "You released the mouse button"
+        })
+    </script>
+  </body>
+</html>

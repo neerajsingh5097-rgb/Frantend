@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">
+        <h2>Welcome to my website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolor facere ipsum corporis minus cupiditate
+            laudantium, dicta soluta possimus, quaerat placeat nihil quae qui hic modi repellat quos. Perferendis, nam!
+        </p>
+        <!-- add the h3 tag in div using DOM properties -->
+        <!-- <h3>Thanks for visiting my website</h3> -->
+         <!-- add the p tag in div  -->
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, fuga.</p> -->
+    </div>
+    
+    <ul class="koikramnhi">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+     <!-- add the Item 4 in ul using a dom properties -->
+    </ul>
+    <ul>
+        <li>Item 2 1</li>
+        <li>Item 2 2</li>
+        <li>Item 2 3</li>
+    </ul>
+
+    <table border="">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Radha</td>
+            <td>18</td>
+        </tr>
+        <!-- add      in this one tr and two td creat and td appent in tr and tr append in table -->
+         <!-- <tr>
+            <td>Krishna</td>
+            <td>20</td>
+         </tr> -->
+    </table>
+    
+   
+
+    <Script>
+        // let mydiv = document.querySelector("#myDiv")
+        // let p = document.createElement("p")
+        // p.textContent = "hello dear welcome in world "
+        // console.log(p)
+        // mydiv.appendChild(p)
+        // let myDiv = document.getElementById("myDiv")
+        // let h3 = document.createElement("h3")
+        // h3.textContent = "hello dear welcome in world 2"
+        // console.log(h3)
+        // myDiv.appendChild(h3)
+        //  let myDiva = document.getElementById("myDiv")
+        // let p = document.createElement("p")
+        // p.textContent = "Thanks for visiting my website"
+        // console.log(p)
+        // myDiva.appendChild(p)
+        // --------------------------------------------------------
+        // let koikramnhi = document.querySelector(".koikramnhi")
+        // let li = document.createElement("li")
+        // li.textContent = "Item 4"
+        // console.log(li)
+        // koikramnhi.appendChild(li)
+        // --------------------------------------------------------
+        let table = document.querySelector("table")
+        let tr = document.createElement("tr") // in this to create a tr 
+        console.log(tr)
+        table.appendChild(tr) // in this tr store in table
+
+        let td = document.createElement("td") // in this line to create td 
+        td.textContent="Krishna" // in this line to store the text in td
+        console.log(td)
+        tr.appendChild(td) // in this line td store in tr 
+
+         let td1 = document.createElement("td") // in this line to create td 
+        td1.textContent="26" // in this line to store the text in td
+        console.log(td1)
+        tr.appendChild(td1)
+    </Script>
+</body>
+</html>
+<!-- 
+1. Change Text
+   Create a button. When clicked, change a paragraph’s text to “Hello World!”.
+
+2. Change Background Color
+   Create a button. When clicked, change the page background color to yellow.
+
+3. Hide a Paragraph
+   Create a button that hides a paragraph when clicked.
+
+4. Show a Hidden Paragraph
+   Create a hidden paragraph and a button. When the button is clicked, display the paragraph.
+
+5. Increase a Number
+   Display 0 in a <h2>. Each button click should increase the number by 1.
+
+6. Decrease a Number
+   Display 10 in a <h2>. Each button click should decrease the number by 1. -->

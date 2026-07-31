@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: #000800;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Mouse event in Dom</h2>
+    <div
+      id="box"
+      style="
+        width: 150px;
+        height: 150px;
+        background-color: skyblue;
+        text-align: center;
+      "
+      onmouseover="hover()"
+      onmouseout="out()"
+    ></div>
+    <br />
+    <hr />
+    <button id="btn" onmousedown="press()" onmouseup="release()">
+      Click & Hold
+    </button>
+    <hr />
+    <p onmouseover="move()">Mouse move here</p>
+    <hr />
+    <div
+      id="card"
+      style="
+        width: 200px;
+        height: 120px;
+        background-color: #ddd;
+        text-align: center;
+        line-height: 120px;
+      "
+    >
+      Hover Card
+    </div>
+    <hr />
+    <div id="like" onmousedown="like()" onmouseup="unlike()">Like</div>
+    <hr />
+    <p id="text">Double click on button to Hide/ Show Text</p>
+    <button id="hideBtn">Hide/Show</button>
+    <script>
+      function hover() {
+        document.getElementById("box").style.backgroundColor = "orange";
+      }
+
+      function out() {
+        document.getElementById("box").style.backgroundColor = "skyblue";
+      }
+    //   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    function press(){
+        let btn = document.getElementById("btn")
+        btn.style.backgroundColor = "#4CAF50"
+        btn.style.transform="scale(0.95)"
+        btn.innerText="Pressed"
+    }
+    function release(){
+        let btn = document.getElementById("btn")
+        btn.style.backgroundColor = "2196f3"
+        btn.style.transform = "scale(1)"
+        btn.innerText = "Click & Hold"
+    }
+    // =================================================================
+    function move(){
+        console.log("mouse is moving")  // isme console me jayege fir mopuse ko move kre te paraghraf tab yah fire krt6ea he
+    }
+    </script>
+  </body>
+</html>

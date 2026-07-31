@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="handleClick()">Click Button</button>
+
+    <!-- <button ondblclick="handleDblClicked()">Double Click Button</button> -->
+    <button id="btn">Double Click Button</button>
+
+    <script>
+      // for single click used
+      function handleClick() {
+        alert("Button was clicked");
+      }
+
+      // function handleDblClicked() {
+      //     alert("Double click event fired")
+      // }
+
+      let btn = document.getElementById("btn");
+      btn.addEventListener("dblclick", function () {
+        alert("Double click event fired");
+      });
+    </script>
+  </body>
+</html>
+<!-- 
+DOM Event list:
+
+click - when an element clicked on
+
+how to add events?
+i. inline - onclick, onsubmit,ondblclick
+onclick="handleClick()" - no need to target element
+
+ii. in script - addEventListener("event",callbackfunction)
+-->
+
+<!--  event ke liye swide he
+  +> https://www.w3schools.com/jsref/dom_obj_event.asp -->
