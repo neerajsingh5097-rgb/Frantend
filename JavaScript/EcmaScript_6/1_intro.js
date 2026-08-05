@@ -108,11 +108,48 @@
 // ===============
 // now using filter to find even number to given array like in below
 
-let mixArr = [15, 78, 65, 48, 32, 4, 2, 9, 1, 3];
-// create a even array like this [78,48,32,4,2] 
+// let mixArr = [15, 78, 65, 48, 32, 4, 2, 9, 1, 3];
+// // create a even array like this [78,48,32,4,2]
 
-console.log(mixArr.filter(num => {
-    if
-}))
+// let evenArr = mixArr.filter(num => {
+//     if(num % 2 ===0){
+//         return num
+//     }
+// })
+// console.log(evenArr)
+// // uper code convert into one line
+// console.log(mixArr.filter(num => num%2 ===0)) // both code are same
+// ================
+// Q.
+// let team = [
+//     {name:"John",position:"Developer"},
+//     {name:"Jack",position:"Manager"},
+//     {name:"Alic",position:"Developer"},
+//     {name:"Bob",position:"lead"},
+// ]
 
+// let developers = team.filter(dev => dev.position ==="Developer") // yaha pr dev vah ak perameter he name position data store ho rha he
+// console.log(developers)
+// ==================================================================
+// map():- yah bhi new array return krta he , yah array ki length ko modifiy nhi krta he
+// use of map(); data fetch from api,store data in new array
+// Q.
+// let arr = [1, 2, 3, 4, 5];
+// // [2,4,6,8,10] 
+// // [1,4,9,16,25]
+
+// console.log(arr.map(num => num+num)) // num ak perameter he isme array ki value store ho rhi he one by one
+// console.log(arr.map(num => num*num))  // in tis code to show the squre of given array number 
+
+// console.log(arr.map(num => num>2)) // map will not given a arror becouse map return the boolen values and not modifiy the lengh of array 
+// =============================================================================
+// find():- can not return array, return first match element (in simple lag - jab koi array me 1 to se 5 number he use 2 ko find krna he to jaya pr 2 mil jayega vahi se yah use reutrn kr deta he )
+
+let arr = [9,5,7,8,9,3,2,1];
+// isme jo 9 se chota he use nikalna he to yah 5 ko dedega jo use phle mila he use deta he 
+ console.log(arr.find(num => num <9))
+//  =========
+// Q. find first even number to given array 
+
+let mix 
 
