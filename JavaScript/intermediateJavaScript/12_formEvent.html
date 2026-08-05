@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Event</title>
+  </head>
+  <body>
+    <form action="">
+      <h3>Focus & Blur Events</h3>
+      <label for="">Username</label>
+      <input type="text" id="username" />
+
+      <hr />
+      <h3>Click events & preventDefault() Method</h3>
+      <input type="text" id="myInput" required />
+      <button type="submit" id="btn">Submit</button>
+      <p id="textMsg"></p>
+
+      <hr />
+      <h3>Input Event</h3>
+      <input type="text" placeholder="Type your name..." id="nameInput" />
+      <p id="output"></p>
+    </form>
+
+    <script>
+      let myInput = document.getElementById("username");
+      myInput.addEventListener("focus", function () {
+        // jese hi ham username ke input me click krte he to vah focus ho kr bg-color yellow ho jata he
+        myInput.style.backgroundColor = "yellow";
+      });
+      myInput.addEventListener("blur", function () {
+        myInput.style.backgroundColor = "white"; // jese hi other jagah pr click krte he tab vah blur ho jata he
+      });
+      // ===========================================================================
+      // use of preventDefault : isme prevent ka matalv hota he rokana (jese hi ham submit button pr data fill krte he tab submit krte he tab vah refresh ho jata he
+      //  use rokane ke liye ham ise use krte he , jese ham brower pr right click krte he jo default context menu opne hota he use bhi rokene ke liye use hota he)
+
+      let btn = document.getElementById("btn");
+      let textMsg = document.getElementById("textMsg");
+      btn.addEventListener("click", function (e) {
+        e.preventDefault(); // preventDefault nhi lagaya to Successfully submitted... to ayega but kuch secound ke liye
+        // islye yah backend tak data nhi pahuch payega to ise rokane ke liye ise use krte he
+        // this method is used to prevent the defaault behaviour buttons
+        textMsg.textContent = "Successfully submitted...";
+      });
+
+      // ==================================================================
+    //   //  isme jo brower pr right click krne pr contextmenu opne ho jata he use kuch is tarah roka jata he
+    //   document.addEventListener("contextmenu", (e) => {
+    //     e.preventDefault();
+    //   });
+    // ====================================================================================
+    // Input Event 
+
+    let nameInput = document.getElementById("nameInput");
+    let output = document.getElementById("output");
+    // when you want to get live value - input
+    nameInput.addEventListener("input" , function(){
+         output.textContent = "Hellooo..." + nameInput.value;
+    })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Right Click Then new defoult box is open</title>
+  </head>
+  <body>
+    <div
+      id="box"
+      style="
+        width: 200px;
+        height: 100px;
+        background-color: thistle;
+        border: 1px solid black;
+        text-align: center;
+      "
+    >
+      right click here
+    </div>
+    <div
+      id="menu"
+      style="position: absolute; background-color:  #eee; border: 1px solid black; padding: 5px"
+      hidden
+    >
+      <div>Edit</div>
+      <div>Delete</div>
+      <div>Add</div>
+    </div>
+
+    <script>
+        let box = document.getElementById("box");
+        let menu = document.getElementById("menu");
+
+        box.addEventListener("contextmenu" , function(e){
+            e.preventDefault();// isse yah jo brower pr right click krne pr jo menu opne hota he vo band ho jayega 
+            menu.hidden = false;
+            menu.style.left = e.pageX + "px"; // px for pixcel
+            menu.style.top = e.pageY + "px"
+        })
+
+        document.addEventListener("click", function(){
+            menu.hidden = true;   // yah uske liye jab tight click krte he to opne ho jata he fir band bhi to hona chayihe na islye yah properties use ki he 
+        })
+    </script>
+  </body>
+</html>

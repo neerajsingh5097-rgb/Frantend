@@ -48,11 +48,13 @@
         text-align: center;
         line-height: 120px;
       "
+      onmouseover="big()"
+      onmouseout="small()"
     >
       Hover Card
     </div>
     <hr />
-    <div id="like" onmousedown="like()" onmouseup="unlike()">Like</div>
+    <div id="like" onmousedown="like()" onmouseup="unlike()">🤍Like</div>
     <hr />
     <p id="text">Double click on button to Hide/ Show Text</p>
     <button id="hideBtn">Hide/Show</button>
@@ -64,23 +66,58 @@
       function out() {
         document.getElementById("box").style.backgroundColor = "skyblue";
       }
-    //   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    function press(){
-        let btn = document.getElementById("btn")
-        btn.style.backgroundColor = "#4CAF50"
-        btn.style.transform="scale(0.95)"
-        btn.innerText="Pressed"
-    }
-    function release(){
-        let btn = document.getElementById("btn")
-        btn.style.backgroundColor = "2196f3"
-        btn.style.transform = "scale(1)"
-        btn.innerText = "Click & Hold"
-    }
-    // =================================================================
-    function move(){
-        console.log("mouse is moving")  // isme console me jayege fir mopuse ko move kre te paraghraf tab yah fire krt6ea he
-    }
+      //   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      function press() {
+        let btn = document.getElementById("btn");
+        btn.style.backgroundColor = "#4CAF50";
+        btn.style.transform = "scale(0.95)";
+        btn.innerText = "Pressed";
+      }
+      function release() {
+        let btn = document.getElementById("btn");
+        btn.style.backgroundColor = "2196f3";
+        btn.style.transform = "scale(1)";
+        btn.innerText = "Click & Hold";
+      }
+      // =================================================================
+      function move() {
+        console.log("mouse is moving"); // isme console me jayege fir mopuse ko move kre te paraghraf tab yah fire krt6ea he
+      }
+      // =========================================================
+      function big() {
+        document.getElementById("card").style.transform = "scale(1.1)";
+        document.getElementById("card").style.fontSize = "20px";
+      }
+      function small() {
+        document.getElementById("card").style.translate = "scale(1)";
+        document.getElementById("card").style.fontSize = "16px";
+      }
+      // ======================================================
+      function like() {
+        let l = document.getElementById("like");
+        l.style.color = "red";
+        // window + . ->vs code emoji
+        l.innerText = "🩷like";
+      }
+
+      function unlike() {
+        let l = document.getElementById("like");
+        l.style.color = "black";
+        // window + . ->vs code emoji
+        l.innerText = "🤍 Like";
+      }
+      // ======================================
+      let isVisible = true;
+      let hideBtn = document.getElementById("hideBtn");
+      hideBtn.addEventListener("dblclick", function () {
+        let text = document.getElementById("text");
+        if (isVisible) {
+          text.style.display = "none";
+        } else {
+          text.style.display = "block";
+        }
+        isVisible = !isVisible;
+      });
     </script>
   </body>
 </html>

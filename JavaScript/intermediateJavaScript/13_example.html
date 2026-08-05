@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Focus,Blur,Input</h3>
+    <form action="">
+        <label for="">Email Id</label>
+        <input type="email" id="emailField" placeholder="Enter Email">
+        <p id="message"></p>
+    </form>
+
+    <script>
+        let input = document.getElementById("emailField");
+        let message  = document.getElementById("message");
+
+        /// yah uske niche likh deta he jese aap us pr focus krte ho
+        input.addEventListener("focus",function(){
+            message.textContent = "Please enter vaild email"
+        })
+
+        input.addEventListener("input", function(){
+            message.textContent ="Typing..."+input.value;
+        })
+        input.addEventListener("blur", function(){
+            if(!input.value.includes("0")){
+                message.textContent = "Invaild email"
+            }else{
+                message.textContent ="Looks Good"
+            }
+        })
+    </script>
+</body>
+</html>
