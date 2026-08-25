@@ -1,61 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <form action="">
-
-        <fieldset>
+      <fieldset>
         <legend>Employee Information</legend>
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" placeholder="Enter your username" maxlength="20">  <!-- isme hame kitne bhi word type kr skte  sapos hame 20 later rakhane ke ham maxlength use krte he-->
-        <br><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" placeholder="Enter your password">
-        <br><br>
-        <label for="email">Email:</label><br>  <!-- jese hame kisi form me kisi cheez ki requrement hoti he uske bina form submit nahi hoga to ham requred tag use krte he-->
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        <br><br>
-        <label for="age">Age:</label><br>
-         <code></code>
-        <input type="number" id="age" name="age" placeholder="Enter your age">
-        <br><br>
-        <label for="dob">Date of Birth:</label><br>
+        <label for="username">Username:</label><br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          maxlength="20"
+        />
+        
+        <!-- isme hame kitne bhi word type kr skte  sapos hame 20 later rakhane ke ham maxlength use krte he-->
+        <br /><br />
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+        <br /><br />
+        <label for="email">Email:</label><br />
+        <!-- jese hame kisi form me kisi cheez ki requrement hoti he uske bina form submit nahi hoga to ham requred tag use krte he-->
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required  
+        />
+        <br /><br />
+        <label for="age">Age:</label><br />
+        <code></code>
+        <input type="number" id="age" name="age" placeholder="Enter your age" />
+        <br /><br />
+        <label for="dob">Date of Birth:</label><br />
         <!-- year month day -->
-        <input type="date" id="dob" name="dob" min="2000-01-01" max="2023-12-31">
-        <br><br>
-        <label for="number">Phone Number:</label><br>
-        <input type="text" size="2" maxlength="2" id="countrycode" name="countrycode" placeholder="+91" readonly>  <!-- size se ham input box ka size badha ya ghatta skte he -->
-        <input type="number" id="number" name="number" placeholder="Enter your phone number">
-        <br><br>
-        <label for="gender">Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="male">
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          min="2000-01-01"
+          max="2023-12-31"
+        />
+        <br /><br />
+        <label for="number">Phone Number:</label><br />
+        <input
+          type="text"
+          size="2"
+          maxlength="2"
+          id="countrycode"
+          name="countrycode"
+          placeholder="+91"
+          readonly
+        />
+        <!-- size se ham input box ka size badha ya ghatta skte he -->
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="Enter your phone number"
+        />
+        <br /><br />
+        <label for="gender">Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" />
         <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
+        <input type="radio" id="female" name="gender" value="female" />
         <label for="female">Female</label>
-        <input type="radio" id="other" name="gender" value="other">
+        <input type="radio" id="other" name="gender" value="other" />
         <label for="other">Other</label>
-        <br><br>
-        <label for="skill">Skill:</label><br>
-        <input type="checkbox" id="skill1" name="skill1" value="css">
+        <br /><br />
+        <label for="skill">Skill:</label><br />
+        <input type="checkbox" id="skill1" name="skill1" value="css" />
         <label for="skill1">CSS</label>
-        <input type="checkbox" id="skill2" name="skill2" value="java">
+        <input type="checkbox" id="skill2" name="skill2" value="java" />
         <label for="skill2">JAVA</label>
-        <input type="checkbox" id="skill3" name="skill3" value="javascript">
+        <input type="checkbox" id="skill3" name="skill3" value="javascript" />
         <label for="skill3">JavaScript</label>
-        <input type="checkbox" id="skill4" name="skill4" value="etc">
+        <input type="checkbox" id="skill4" name="skill4" value="etc" />
         <label for="skill4">ETC</label>
-        <br><br>
+        <br /><br />
         <!-- <input type="sumit value="login> -->
-        <input type="submit" value="Login">
-        <input type="reset" value="Reset">  
-
-        </fieldset>
+        <input type="submit" value="Login" />
+        <input type="reset" value="Reset" />
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>
 <!-- 
 form tag ka use form create karne ke liye hota hai

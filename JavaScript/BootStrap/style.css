@@ -1,0 +1,15 @@
+.btn{
+    color: blue;
+    background-color: rgb(238, 111, 111);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.btn:hover {
+
+    color: darkblue;
+    background-color: rgb(239, 227, 227);
+}
+
+/* Bootstrap Button Styles me yah sab kre ki koi jarurat nhi he  */
