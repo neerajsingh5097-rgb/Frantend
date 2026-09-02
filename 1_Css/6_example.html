@@ -1,23 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-
-    .box{
+      .box {
         width: 40%;
         background-color: rgb(248, 195, 195);
         text-align: justify;
         border-radius: 10px;
         padding: 10px;
         margin-left: 30%;
-    }
-    h2{
+      }
+      h2 {
         text-align: center;
-    }
-    button{
+      }
+      button {
         display: block;
         margin: 10px auto;
         padding: 10px 20px;
@@ -26,17 +25,54 @@
         border: none;
         border-radius: 20px;
         cursor: pointer;
-    }
+      }
+
+      .box2 {
+        width: 40%;
+        background-color: bisque;
+        font-size: medium;
+        text-align: justify;
+        padding: 12px;
+        margin-left: 30%;
+        border-radius: 15px;
+        border: 1px solid darkred;
+        /* box-shadow: 2px 2px 6px yellowgreen; */
+        box-shadow:
+          inset 0 0 10px black,
+          2px 2px 6px greenyellow;
+        font-family: cursive;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="box">
-        <h1>Card Heading</h1>
-        <p>Card Description:
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, nesciunt incidunt. Hic ipsum quam totam reiciendis, cupiditate alias dignissimos dicta dolorem nisi distinctio nesciunt, porro delectus enim accusantium sequi aspernatur!
-            Lorem  ipsum dolor sit amet consectetur adipisicing elit. Sapiente error inventore molestiae voluptate. Possimus molestiae ratione fugiat aperiam perspiciatis dicta? Pariatur dolores nulla molestiae ipsum ex consectetur neque necessitatibus non!
-        </p>
-        <button>click button</button>
+      <h1>Card Heading</h1>
+      <p>
+        Card Description: Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Ut, nesciunt incidunt. Hic ipsum quam totam reiciendis, cupiditate
+        alias dignissimos dicta dolorem nisi distinctio nesciunt, porro delectus
+        enim accusantium sequi aspernatur! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Sapiente error inventore molestiae
+        voluptate. Possimus molestiae ratione fugiat aperiam perspiciatis dicta?
+        Pariatur dolores nulla molestiae ipsum ex consectetur neque
+        necessitatibus non!
+      </p>
+      <button>click button</button>
     </div>
-</body>
+
+    <hr />
+    <div class="box2">
+      <h1>My life</h1>
+      <p>
+        About Of my lif: Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Architecto non voluptatem beatae? Ullam repudiandae consequatur
+        vel eligendi soluta praesentium, vero eveniet tempora dolorem
+        reprehenderit non ipsam quasi, sequi quod veritatis! Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Deserunt iusto asperiores qui
+        rerum ad placeat repudiandae omnis alias praesentium molestias laborum,
+        voluptates incidunt, ipsum id? Placeat voluptatem debitis sequi quod.
+      </p>
+      <button id="mylife">Check My life</button>
+    </div>
+  </body>
 </html>

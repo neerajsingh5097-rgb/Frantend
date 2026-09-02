@@ -27,6 +27,20 @@
 
     border-style: ridge;
     border-width: 10px;
+    border-width: 9px;
+    height: 100px;
+    width: 65%;
+    background-color: aqua;
+    border-style: solid;
+    /* border-style: solid dashed double dotted; */
+    /* border-style: solid dashed dotted none; */
+    border-style: solid double;
+    border-color: brown red green yellow;
+    border-top-color: blue;
+    /* border-width: 4px 0px; */
+    border-radius: 60px 57px 65px 56px;
+    /* border-width: 10px; */
+    border-width: 10px;
 }
 
 .circle{
